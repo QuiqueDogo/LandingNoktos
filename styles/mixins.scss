@@ -1,0 +1,27 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin responsiveMenuList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem 0;
+}
+
+
+@mixin inputLabel {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: bold;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: left;
+    opacity: 0.8;
+}

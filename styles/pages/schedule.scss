@@ -1,0 +1,313 @@
+.schedule{
+  &__main_container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    @media(max-width: 640px) {
+      padding: 30px;
+    }
+  }
+
+  &__calendar_container{
+    margin-bottom: 30px;
+  }
+
+  &__subtitle{
+    text-align: center;
+    font-family: "Raleway SemiBold", serif;
+    color: $primary;
+    font-size: 18px;
+    & span{
+      color: $accent;
+    }
+  }
+
+  &__hours_title{
+    background-color: $primary;
+    color: white;
+    font-family: "Raleway Medium", serif;
+    border-radius: 30px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    & p{
+      margin: 0;
+    }
+  }
+
+  &__hours_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__hour_card{
+    background-color: $background;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & p{
+      margin-bottom: 0;
+      text-align: center;
+      font-family: "Raleway Medium", serif;
+      font-size: 14px;
+    }
+  }
+
+  &__message_no_items{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    & p{
+      font-family: "Raleway Bold", serif;
+      font-size: 20px;
+    }
+  }
+
+  &__select_hour{
+    background-color: $accent;
+    color: white;
+  }
+
+
+  &__title{
+    font-size: 30px;
+  }
+
+  &__subtitle{
+    font-size: 20px;
+  }
+
+  &__title_container p{
+    font-family: "Raleway Medium", serif;
+  }
+
+  &__buttons_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__button_confirm{
+    background-color: $accent;
+    border: $accent;
+    font-family: "Raleway Regular", serif;
+    padding: 10px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 17px $accentOpacity;
+    &:hover{
+      background-color: $darkAccent;
+      border: $darkAccent;
+    }
+  }
+
+  &__button_skip{
+    font-family: "Raleway SemiBold", serif !important;
+    border: solid 2px $accent !important;
+    transition: all 0.3s ease !important;
+    color: $accent !important;
+    border-radius: 30px !important;
+    padding: 10px 50px;
+
+  }
+
+  &__button_skip:hover{
+    color: white !important;
+    background-color: $accent !important;
+  }
+
+  &__button_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  &__button_continue{
+    background-color: $accent;
+    border: $accent;
+    font-family: "Raleway Regular", serif;
+    padding: 10px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 17px $accentOpacity;
+    &:hover{
+      background-color: $darkAccent;
+      border: $darkAccent;
+    }
+  }
+}
+
+.react-calendar{
+  width: 100% !important;
+  height: 330px !important;
+  font-family: "Raleway Regular", serif !important;
+  border: 0 !important;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1) !important;
+}
+
+.react-calendar__navigation__label{
+  background-color: $primary !important;
+  color: white;
+}
+
+.react-calendar__navigation__prev2-button{
+  background-color: $primary !important;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: $accent;
+
+}
+
+.react-calendar__navigation__next2-button{
+  background-color: $primary !important;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: $accent;
+
+}
+
+.react-calendar__navigation__next-button{
+  background-color: $primary !important;
+  color: $accent;
+
+}
+
+.react-calendar__navigation__prev-button{
+  background-color: $primary !important;
+  color: $accent;
+
+}
+
+.react-calendar__tile:hover {
+  border-radius: 30px;
+  background-color: $darkAccent !important;
+  color: white;
+}
+
+.react-calendar__tile--active {
+  border-radius: 30px;
+  background-color: $accent;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+
+  &__main_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 30px;
+    background-color: $white;
+    width: 30%;
+    height: 50%;
+    overflow: hidden;
+
+
+    @media (max-width: 1400px) {
+      width: 40%;
+      height: 50%;
+    }
+
+    @media (max-width: 800px) {
+      width: 80%;
+    }
+
+    @media (max-height: 900px) {
+      height: 60%;
+    }
+
+    @media (max-height: 750px) {
+      height: 70%;
+    }
+
+    @media (max-height: 650px) {
+      height: 80%;
+    }
+  }
+
+  &__inner_container{
+    position: relative;
+    border: 5px solid white;
+    height: 100%;
+  }
+
+  &__logo_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    & img {
+      width: 70px;
+    }
+  }
+
+  &__title{
+    font-family: "Raleway Bold", serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 0 0;
+    color: $primary;
+
+    @media (max-width: 1000px) {
+      font-size: 20px;
+    }
+  }
+
+  &__subtitle{
+    font-family: "Raleway Bold", serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 20px 0;
+    & span{
+      color: $accent;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 20px;
+    }
+  }
+
+  &__secondary_text{
+    font-family: "Raleway Regular", serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 0 0;
+    color: $grayColor;
+      &_x{
+        font-size: 17px;
+        color: #797878;
+      }
+  }
+
+  &__passport_image_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    & img {
+      width: 180px
+    }
+  }
+
+}

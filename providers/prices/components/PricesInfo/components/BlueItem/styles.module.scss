@@ -1,0 +1,118 @@
+@import "/styles/variables.scss";
+$background: "/img/Prices/PricesInfo/background.png";
+
+.BlueItem {
+  width: 350px;
+  height: 750px;
+  padding: 24px;
+  font-size: 16px;
+  border-radius: 25px;
+  background-size: cover;
+  background-color: $accent;
+  background-repeat: no-repeat;
+  background-image: url($background);
+  background-position: 20% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include xl {
+    width: 300px;
+    font-size: 13px;
+    height: 650px;
+  }
+  &__morePopular {
+    display: flex;
+    justify-content: flex-end;
+    & > div {
+      display: inline;
+      padding: 16px 24px;
+      background-color: #000;
+      border-radius: 15px;
+      & > span {
+        color: #fff;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  &__title {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    & > span:first-child {
+      color: #000;
+      font-size: 1.7em;
+      font-weight: 600;
+    }
+    & > span:last-child {
+      margin-left: 10px;
+      color: #fff;
+      font-size: 1.7em;
+      font-weight: 600;
+    }
+  }
+  &__cost {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    & > div {
+      width: 85%;
+      padding: 8px 0;
+      border: 1px solid #0cbcf3;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & > label {
+        margin: 0;
+        color: #fff;
+        font-size: 1.8em;
+        font-weight: 600;
+        line-height: 32px;
+      }
+      & > span {
+        color: #fff;
+        font-size: 1.32em;
+        font-weight: 600;
+      }
+    }
+  }
+  &__labelText {
+    display: flex;
+    justify-content: center;
+    & > p {
+      max-width: 240px;
+      color: #fff;
+      font-size: 1.2em;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+  }
+  &__buyButton {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__labelText2 {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    & > p {
+      max-width: 280px;
+      color: #fff;
+      font-size: 1.2em;
+      text-align: justify;
+      letter-spacing: 0.5px;
+    }
+  }
+  &__finalLabel {
+    display: flex;
+    justify-content: center;
+    & > label {
+      margin-top: 0.8rem;
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+  }
+}

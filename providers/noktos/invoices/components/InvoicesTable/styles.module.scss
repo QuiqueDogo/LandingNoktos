@@ -1,0 +1,26 @@
+@import "../../../../../styles/variables.scss";
+
+.InvoicesTable {
+    margin-top: 56px;
+    padding: 24px;
+    border-radius: 15px;
+    box-shadow: 0px 1.22px 5.8px 0px #e8e8e8;
+    & > div:first-child {
+        margin-bottom: 24px;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        & > div:first-child {
+            width: 45%;
+            display: flex;
+            justify-content: space-between;
+        }
+        & > div:last-child {
+            width: 200px;
+        }
+    }
+    // RETIRAR Y PONER UN MANEJO DE EMPTY
+    & h2 {
+        text-align: center;
+    }
+}

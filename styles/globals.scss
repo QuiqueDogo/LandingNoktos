@@ -1,0 +1,626 @@
+@import "variables";
+@import "fonts";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.is-valid-input {
+  box-shadow: 0 0 5px $accept !important;
+  border: 1px solid $accept !important;
+  &:focus {
+    box-shadow: 0 0 2px $acceptAccent !important;
+    border: 1px solid $accept !important;
+  }
+}
+
+.is-invalid-input {
+  box-shadow: 0 0 5px $error !important;
+  border: 1px solid $error !important;
+  &:focus {
+    box-shadow: 0 0 2px $errorAccent !important;
+    border: 1px solid $error !important;
+  }
+}
+
+.error-text {
+  font-family: "Raleway Bold", serif;
+  color: $error;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.btn-accent {
+  background-color: $accent !important;
+  transition: all 0.3s ease !important;
+  border: 0 !important;
+  border-radius: 30px !important;
+  padding: 15px;
+  font-family: "Raleway Medium", serif;
+  min-width: 10rem !important;
+
+  &:hover {
+    background-color: $darkAccent !important;
+    color: white;
+  }
+}
+
+// ========= REACT DATA PICKER ==========
+// MAIN CONTAINER
+.DateRangePicker {
+  box-shadow: 0px 0px 0px #fff !important;
+}
+
+// BORDER
+.DateRangePickerInput__withBorder {
+  width: 100% !important;
+  border-radius: 10px !important;
+}
+
+// LABEL DATE
+.DateInput_input {
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+}
+
+.DateInput_input__focused {
+  border-bottom: 2px solid $accent !important;
+}
+
+// SQUARE DAY
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover {
+  background-color: $accent !important;
+  border: 1px double $accent !important;
+}
+
+// =======================================
+
+.generic {
+  &__required_input {
+    color: red;
+    font-size: 20px;
+  }
+
+  &__line_through {
+    text-decoration: line-through;
+  }
+
+  &__button_primary {
+    background-color: $primary;
+    border: $primary;
+    font-family: "Raleway Regular", serif;
+    padding: 5px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 17px $primaryOpacity;
+    color: white;
+
+    &:hover {
+      background-color: $darkPrimary;
+      border: $darkPrimary;
+      color: white;
+    }
+  }
+
+  &__button_orange {
+    background-color: $orange;
+    border: $orange;
+    font-family: "Raleway Regular", serif;
+    padding: 5px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 17px $orangeOpacity;
+    color: white;
+
+    &:hover {
+      background-color: $darkOrange;
+      border: $darkOrange;
+      color: white;
+    }
+  }
+
+  &__button_blue {
+    background-color: $accent;
+    border: $accent;
+    font-family: "Raleway Regular", serif;
+    padding: 5px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 17px $accentOpacity;
+    color: white;
+
+    &:hover {
+      background-color: $darkAccent;
+      border: $darkAccent;
+      color: white;
+    }
+  }
+
+  &__button_slim {
+    background-color: $accent !important;
+    border: $accent !important;
+    font-family: "Raleway Regular", serif;
+    padding: 5px 20px !important;
+    border-radius: 20px !important;
+    box-shadow: 0 0 17px $accentOpacity !important;
+    color: white !important;
+    font-size: 15px;
+    width: 100%;
+    margin: 15px 0;
+    &:hover {
+      background-color: $darkAccent !important;
+      border: $darkAccent !important;
+      color: white !important;
+    }
+  }
+
+  &__button_blue_circular {
+    background-color: $accent;
+    border: $accent;
+    font-family: "Raleway Regular", serif;
+    padding: 2px 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 17px $accentOpacity;
+    color: white;
+
+    &:hover {
+      background-color: $darkAccent;
+      border: $darkAccent;
+      color: white;
+    }
+  }
+
+  &__button_outlined_blue {
+    border-radius: 20px;
+    border: solid 2px $accent;
+    padding: 5px 50px;
+    font-family: "Raleway Regular", serif;
+
+    &:hover {
+      border: solid 2px $darkAccent;
+      background-color: $accentOpacity;
+      color: white;
+    }
+  }
+
+  &__button_slim_outlined_blue {
+    border-radius: 20px;
+    border: solid 2px $accent;
+    padding: 2px 20px;
+    font-family: "Raleway Regular", serif;
+    background: $white;
+    color: $primary;
+    &:hover {
+      border: solid 2px $darkAccent;
+      background-color: $accentOpacity;
+      color: white;
+    }
+  }
+
+  &__map {
+    border: none;
+  }
+
+  &__main_container {
+    padding: 60px 80px 60px 80px;
+  }
+}
+
+.no_info_container {
+  padding: 16px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & p {
+    font-family: "Raleway Black", serif;
+    font-size: 25px;
+  }
+}
+
+.no_info_img_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
+  & img {
+    width: 20%;
+  }
+}
+
+.blue_addon {
+  background-color: $accent !important;
+  color: white !important;
+  border: 0 !important;
+  border-bottom-left-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
+
+.rounded_input {
+  border-bottom-right-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  font-family: "Raleway Medium", serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: 0;
+  &:focus {
+    box-shadow: 0 0 5px $accent;
+  }
+}
+
+.rounded_input_revert {
+  border-bottom-left-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+  font-family: "Raleway Medium", serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: 0;
+  height: 100%;
+  &:focus {
+    box-shadow: 0 0 5px $accent;
+  }
+}
+
+// TICKETS
+
+.header-logo {
+  height: 80px;
+}
+
+.content {
+  width: 100%;
+  margin-top: 50px;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.terms-p {
+  font-family: "Raleway Light", serif;
+  font-size: 12px;
+  text-align: justify;
+}
+.text-header {
+  font-family: "Raleway Medium", serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.title-content {
+  font-family: "Raleway Medium", serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.text-content {
+  font-family: "Raleway Regular", serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.bg-extended {
+  background-color: $accent;
+  width: 100%;
+  height: 60px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.button-extended {
+  background-color: $accent;
+  border-radius: 10px;
+  border: solid $accent;
+  font-family: "Raleway Medium", serif;
+  font-size: 13px;
+  color: white;
+  margin-bottom: 10px;
+}
+.button-extended:focus {
+  background-color: $accent;
+  border-radius: 10px;
+}
+.button-extended:hover {
+  background-color: $accent;
+  border-radius: 10px;
+}
+.row-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bordered-card {
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+.col-without-padding {
+  padding: 0 !important;
+}
+
+//MARKER
+
+marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: $primary;
+  color: white;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  &:hover {
+    z-index: 1;
+  }
+}
+
+.pin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: #00cae9;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+}
+.pin:after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: #e6e6e6;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+.pulse {
+  background: #d6d4d4;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: -2;
+}
+.pulse:after {
+  content: "";
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  margin: -13px 0 0 -13px;
+  animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  box-shadow: 0 0 1px 2px #00cae9;
+  animation-delay: 1.1s;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px) rotate(-45deg);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(30px) rotate(-45deg);
+  }
+
+  80% {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(-45deg);
+  }
+}
+
+.rating_star {
+  & span {
+    width: 50px;
+    font-size: 40px;
+  }
+}
+
+.detail_hotel__map_container > div {
+  border-radius: 10px;
+}
+
+.btn-icon {
+  border: none;
+  background: transparent;
+  &:focus {
+    outline: none;
+  }
+  & i {
+    opacity: 0.8;
+    transition: 0.3s all ease;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &--update i {
+    color: $accent;
+  }
+  &--delete i {
+    color: $error;
+  }
+}
+
+.css-yk16xz-control {
+  height: 40px !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
+.css-2b097c-container {
+  width: 90%;
+  height: 40px;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
+.blue-icon {
+  color: #00c2ff;
+}
+
+.delete-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.add-borders {
+  border-top: 0.2px solid #e7e7e7;
+  border-bottom: 0.2px solid #e7e7e7;
+}
+
+.custom-expanded {
+  width: 100%;
+}
+
+.btn-download {
+  background: transparent;
+  border: 2px solid #00c2ff !important;
+  padding: 10px 20px;
+  color: #00c2ff;
+  margin-bottom: 1rem;
+  outline-width: 0 !important;
+}
+
+.rdt_TableHeader {
+  background: #00111c !important;
+  & > div {
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
+}
+
+.visible {
+  visibility: visible;
+}
+
+.no-visible {
+  visibility: hidden;
+}
+
+// CAROUSEL - STYLE
+/* ARROWS */
+.rec.rec-arrow {
+  min-width: 35px;
+  width: 35px;
+  height: 35px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include tablet {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+  }
+}
+/*ARROW ICON*/
+.rec.rec-arrow.lgksPe {
+  font-size: 1em;
+  @include tablet {
+    font-size: 1.6em;
+  }
+}
+/* ARROWS ON HOVER */
+.rec.rec-arrow:hover {
+  color: #000 !important;
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  border: none !important;
+}
+/* ARROWS ON FOCUS */
+.rec.rec-arrow:focus:enabled {
+  color: #000 !important;
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+/* round buttons on hover */
+.rec.rec-arrow:active {
+  color: #000 !important;
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+/* hide disabled buttons */
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+/* pagination circle */
+.rec-dot_active {
+  box-shadow: 0 0 1px 3px $accent !important;
+  background-color: $accent !important;
+}
+
+.containerInButton {
+  position: relative;
+}
+
+.btnClear {
+  position: absolute;
+  border-radius: 5px;
+  right: 0;
+  z-index: 2;
+  border: none;
+  top: 3px;
+  height: 30px;
+  cursor: pointer;
+  color: $error;
+  background-color: transparent;
+  transform: translateX(-5px);
+}

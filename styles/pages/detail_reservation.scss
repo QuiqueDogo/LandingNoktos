@@ -1,0 +1,47 @@
+.detailreservation {
+
+  &__container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  &__subtitle {
+    font-family: "Raleway Medium", serif;
+    font-size: 18px;
+  }
+
+  &__text {
+    font-family: "Raleway Light", serif;
+    margin-bottom: 2px;
+
+    & span {
+      font-family: "Raleway Regular", serif;
+      font-size: 16px;
+    }
+  }
+
+  &__cancel_container {
+    margin-top: 40px;
+  }
+
+  &__cancel_button {
+    background-color: $accent !important;
+    transition: all 0.3s ease !important;
+    border: 0 !important;
+    border-radius: 15px !important;
+    font-family: "Raleway Medium", serif;
+
+    &:hover {
+      background-color: $darkAccent !important;
+      color: white;
+    }
+  }
+
+  &__message_cancel{
+    color: $error;
+    font-family: "Raleway Bold", serif;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,111 @@
+@import "/styles/variables.scss";
+$background: "/img/LandingPage/SecondPage/wave.png";
+
+@mixin gradientText {
+    background: linear-gradient(#2698ea, #76ceff, #1f1d67);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.SecondPage {
+    margin-top: 9rem;
+    font-size: 16px;
+    font-family: "Poppins Regular";
+    background-image: url($background);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-areas:
+        "info"
+        "image"
+        "items";
+    @include tablet {
+        font-size: 18px;
+    }
+    @include desktop {
+        grid-template-columns: 1fr 1.2fr;
+        grid-column: 16px;
+        grid-template-areas:
+            "info info"
+            "image items";
+    }
+    &__info {
+        grid-area: info;
+        display: flex;
+        justify-content: center;
+        @include desktop {
+            justify-content: flex-end;
+        }
+        & > div {
+            width: 95%;
+            max-width: 320px;
+            text-align: center;
+            @include tablet {
+                max-width: 360px;
+            }
+            @include desktop {
+                width: 100%;
+                max-width: none;
+                margin-bottom: 72px;
+            }
+            & > h2 {
+                margin-bottom: 36px;
+                font-size: 1.45em;
+                font-weight: 600;
+                @include gradientText;
+            }
+            & > p {
+                margin: 0;
+                line-height: 36px;
+                font-size: 1.8em;
+                font-weight: 600;
+            }
+        }
+    }
+    &__image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        grid-area: image;
+        @include desktop {
+            margin-top: -20%;
+            margin-left: 12%;
+            align-items: center;
+            justify-content: center;
+        }
+        & > div {
+            width: 340px;
+            @include tablet {
+                width: 380px;
+            }
+            @include desktop {
+                max-width: 500px;
+                width: 90%;
+            }
+            & > img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        grid-area: items;
+        & > div {
+            width: 75%;
+            max-width: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include tablet {
+                margin-top: 20px;
+            }
+            @include desktop {
+                width: 80%;
+                margin: 0;
+            }
+        }
+    }
+}

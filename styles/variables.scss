@@ -1,0 +1,85 @@
+$white: #ffffff;
+$primary: #00253e;
+$darkPrimary: #00121d;
+$accent: #00c2ff;
+$secondary: #363853;
+$darkAccent: #01a0c8;
+$accentOpacity: rgba(0, 181, 226, 0.48);
+$primaryOpacity: rgba(0, 37, 62, 0.48);
+$accentBorder: rgba(0, 181, 226, 0.1);
+$background: #fcfcfc;
+$error: #f16161;
+$errorAccent: #c85151;
+$accept: #43b25c;
+$acceptAccent: #43b25c;
+$grayColor: #878787;
+$grayLight: #fdfdfd;
+$blueLight: #f2fcff;
+$textGrayLight: #9aa9bb;
+$silver: #8c9698;
+$gold: #efb913;
+$orange: #ff7931;
+$darkOrange: #db682b;
+$orangeOpacity: rgba(255, 121, 49, 0.48);
+$cardBackground: #ececed;
+$textGray: #525354;
+$greenCheck: #8fd29f;
+$grayMembership: #f1f5f7;
+$blueLightPrices: #e1f2fe;
+$blueLightQuestions: #edf3f6;
+
+$backgroundGray: #f6f9fc;
+$backgroundBlue: #d8effd;
+$blue: #00b3eb;
+$lines: #12263c;
+$colorBlueDark: #1f5b9e;
+$botonOrange: #ef7739;
+
+$circleHome: #e5e5e5;
+
+// MEDIA QUERIES
+@mixin tv {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin preTablet {
+  @media screen and (min-width: 500px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 760px) {
+    @content;
+  }
+}
+@mixin notDesktop {
+  @media screen and (max-width: 1025px) {
+    @content;
+  }
+}
+@mixin tabletOnly {
+  @media screen and (min-width: 760px) and (max-width: 1025px) {
+    @content;
+  }
+}
+@mixin mobileOnly {
+  @media screen and (max-width: 760px) {
+    @content;
+  }
+}
+@mixin smallPhone {
+  @media screen and (min-width: 0px) and (max-width: 320px) {
+    @content;
+  }
+}

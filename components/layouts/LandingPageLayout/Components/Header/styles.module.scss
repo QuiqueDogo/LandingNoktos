@@ -1,0 +1,64 @@
+@import "/styles/variables.scss";
+
+.Header {
+  padding: 24px 32px 0 32px;
+  @include tablet {
+    padding: 24px 56px 0 56px;
+  }
+  @include desktop {
+    padding: 24px 40px;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include desktop {
+      width: 100%;
+      max-width: 850px;
+    }
+    &__logo {
+      width: 100px;
+      @include tablet {
+        width: 120px;
+      }
+      & > img {
+        width: 100px;
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include desktop {
+      width: 35%;
+    }
+  }
+}
+
+.UserInfo {
+  display: flex;
+  align-items: center;
+  &__panel {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    &__name {
+      margin: 8px 0 0 8px;
+      max-width: 180px;
+      max-height: 20px;
+      font-size: 1em;
+      font-weight: 600;
+      color: #979797;
+      font-family: "DM Sans Regular";
+      overflow: hidden;
+    }
+  }
+}

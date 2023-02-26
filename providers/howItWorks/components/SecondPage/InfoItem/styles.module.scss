@@ -1,0 +1,24 @@
+.InfoItem {
+    margin-bottom: 48px;
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+    justify-content: center;
+    & > div:last-child {
+        & > h3 {
+            margin-bottom: 12px;
+            color: #1d293f;
+            font-size: 1.15em;
+            font-weight: 600;
+        }
+        & > p {
+            max-width: 300px;
+            margin: 0;
+            color: #7c8087;
+            font-size: 0.82em;
+            font-family: "Poppins Medium";
+            line-height: 24px;
+            text-align: justify;
+        }
+    }
+}

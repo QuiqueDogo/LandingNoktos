@@ -1,0 +1,80 @@
+@import "../../../../../../styles/variables.scss";
+.AccountStatement {
+    border-radius: 30px;
+    border: 2px solid rgba(196, 196, 196, 0.38);
+    padding: 24px 28px 88px 28px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0px 9px 12px 1px rgba(0, 0, 0, 0.1);
+    @include desktop {
+        padding: 24px 28px;
+    }
+    & > div:first-child {
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        & > h3 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        & > div {
+            padding: 4px 20px;
+            color: #fff;
+            background-color: $accent;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            bottom: 15px;
+            left: 32%;
+            @include desktop {
+                left: 65%;
+                bottom: 86%;
+            }
+            & > label {
+                margin: 0;
+                font-size: 15px;
+                @include desktop {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    &__reportItem {
+        padding: 16px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        & > div:first-child {
+            display: flex;
+            align-items: center;
+            & > div:first-child {
+                width: 90px;
+                height: 90px;
+                border-radius: 15px;
+                border: 1px solid rgba(151, 151, 151, 0.17);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            & > div:last-child {
+                margin-left: 16px;
+                & > h4 {
+                    margin: 0;
+                    font-size: 19px;
+                    font-weight: 600;
+                }
+                & > span {
+                    display: block;
+                    color: #808191;
+                }
+            }
+        }
+        & > div:last-child {
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+}

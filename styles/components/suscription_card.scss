@@ -1,0 +1,146 @@
+.suscriptioncard{
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1) !important;
+  margin-top: 30px;
+
+  &__header{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background: rgba(254,254,254,1);
+    background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(237,237,237,1) 50%, rgba(242,242,242,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(50%, rgba(237,237,237,1)), color-stop(100%, rgba(242,242,242,1)));
+    background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(237,237,237,1) 50%, rgba(242,242,242,1) 100%);
+    background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(237,237,237,1) 50%, rgba(242,242,242,1) 100%);
+    background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(237,237,237,1) 50%, rgba(242,242,242,1) 100%);
+    background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(237,237,237,1) 50%, rgba(242,242,242,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f2f2f2', GradientType=0 );
+
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & p{
+      margin-bottom: 5px;
+    }
+  }
+
+  &__header_selected{
+    background: rgba(212,246,255,1);
+    background: -moz-linear-gradient(top, rgba(212,246,255,1) 0%, rgba(0,196,255,1) 50%, rgba(0,196,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,246,255,1)), color-stop(50%, rgba(0,196,255,1)), color-stop(100%, rgba(0,196,255,1)));
+    background: -webkit-linear-gradient(top, rgba(212,246,255,1) 0%, rgba(0,196,255,1) 50%, rgba(0,196,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(212,246,255,1) 0%, rgba(0,196,255,1) 50%, rgba(0,196,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(212,246,255,1) 0%, rgba(0,196,255,1) 50%, rgba(0,196,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(212,246,255,1) 0%, rgba(0,196,255,1) 50%, rgba(0,196,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4f6ff', endColorstr='#00c4ff', GradientType=0 );
+  }
+
+  &__header_selected_gold{
+    background: rgba(242,219,150,1);
+    background: -moz-linear-gradient(top, rgba(242,219,150,1) 0%, rgba(239,184,16,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,219,150,1)), color-stop(100%, rgba(239,184,16,1)));
+    background: -webkit-linear-gradient(top, rgba(242,219,150,1) 0%, rgba(239,184,16,1) 100%);
+    background: -o-linear-gradient(top, rgba(242,219,150,1) 0%, rgba(239,184,16,1) 100%);
+    background: -ms-linear-gradient(top, rgba(242,219,150,1) 0%, rgba(239,184,16,1) 100%);
+    background: linear-gradient(to bottom, rgba(242,219,150,1) 0%, rgba(239,184,16,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2db96', endColorstr='#efb810', GradientType=0 );
+  }
+
+  &__header_selected_silver{
+    background: rgba(210,216,217,1);
+    background: -moz-linear-gradient(top, rgba(210,216,217,1) 0%, rgba(138,149,151,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(210,216,217,1)), color-stop(100%, rgba(138,149,151,1)));
+    background: -webkit-linear-gradient(top, rgba(210,216,217,1) 0%, rgba(138,149,151,1) 100%);
+    background: -o-linear-gradient(top, rgba(210,216,217,1) 0%, rgba(138,149,151,1) 100%);
+    background: -ms-linear-gradient(top, rgba(210,216,217,1) 0%, rgba(138,149,151,1) 100%);
+    background: linear-gradient(to bottom, rgba(210,216,217,1) 0%, rgba(138,149,151,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d8d9', endColorstr='#8a9597', GradientType=0 );
+
+  }
+
+  &__name{
+    font-family: "Raleway Medium", serif;
+    font-size: 18px;
+  }
+
+  &__name_selected{
+    color: $white;
+  }
+
+  &__container_tokens{
+    & p{
+      font-family: "Raleway Bold", serif;
+      font-size: 20px;
+      color: $primary;
+      text-align: center;
+    }
+  }
+
+  &__container_tokens_selected{
+    & p{
+      color: $white;
+    }
+  }
+
+  &__container_price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & p{
+      font-family: "Raleway SemiBold", serif;
+      font-size: 18px;
+      color: $primary;
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+
+  &__container_price_selected{
+    & p{
+      color: $white;
+    }
+  }
+
+  &__footer{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+
+    & p{
+      text-align: center;
+      margin-bottom: 5px;
+      font-family: "Raleway Medium", serif;
+    }
+  }
+
+  &__check_red{
+    color: #f67676;
+  }
+
+  &__check_green{
+    color: #92e5a3;
+  }
+
+  &__footer_container_buttons{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__pointer_cursor{
+    cursor: pointer;
+  }
+
+  &__opacity{
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0) !important;
+    opacity: .5 !important;
+  }
+}
+
+
+
+

@@ -1,0 +1,56 @@
+.paymentmethods{
+
+  &__container{
+    background-color: $white;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    border-radius: 15px;
+    min-height: 500px;
+    padding: 50px;
+  }
+
+  &__card{
+    max-width: 60%;
+    height: 150px;
+    background: #eee;
+    background: -moz-linear-gradient(-45deg,#eeeeee 0%,#eeeeee 69%,#e1e1e1 69%,#e1e1e1 100%);
+    background: -webkit-gradient(left top,right bottom,color-stop(0%,#eeeeee),color-stop(69%,#eeeeee),color-stop(69%,#e1e1e1),color-stop(100%,#e1e1e1));
+    background: -webkit-linear-gradient(-45deg,#eeeeee 0%,#eeeeee 69%,#e1e1e1 69%,#e1e1e1 100%);
+    background: -o-linear-gradient(-45deg,#eeeeee 0%,#eeeeee 69%,#e1e1e1 69%,#e1e1e1 100%);
+    background: -ms-linear-gradient(-45deg,#eeeeee 0%,#eeeeee 69%,#e1e1e1 69%,#e1e1e1 100%);
+    background: linear-gradient(135deg,#eeeeee 0%,#eeeeee 69%,#e1e1e1 69%,#e1e1e1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#eeeeee",endColorstr="#e1e1e1",GradientType=1 );
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    padding: 0 10px;
+  }
+
+  &__inner_container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__number_card{
+    font-family: "Raleway Bold", serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__footer_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Raleway Medium", serif;
+
+    & i{
+      font-size: 30px;
+    }
+  }
+}

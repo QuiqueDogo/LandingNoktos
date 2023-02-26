@@ -1,0 +1,19 @@
+.AddCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > form {
+        width: 90%;
+    }
+    & > div:first-child {
+        align-self: flex-end;
+    }
+    &__stripe {
+        &__input {
+            padding: 10.5px 14px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.54);
+        }
+    }
+}

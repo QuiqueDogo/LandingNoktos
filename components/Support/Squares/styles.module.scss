@@ -1,0 +1,31 @@
+@import "/styles/variables.scss";
+
+@mixin smallSquare {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 194, 255, 0.49);
+    border-radius: 10px;
+    position: absolute;
+}
+
+.Squares {
+    &__bigSquare {
+        width: 52px;
+        height: 52px;
+        background-color: $accent;
+        border-radius: 10px;
+        position: absolute;
+        top: -68px;
+        left: -68px;
+    }
+    &__smallSquareRight {
+        @include smallSquare;
+        bottom: 0;
+        right: -40px;
+    }
+    &__smallSquareLeft {
+        @include smallSquare;
+        bottom: -40px;
+        right: 0;
+    }
+}

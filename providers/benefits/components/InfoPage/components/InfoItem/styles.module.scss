@@ -1,0 +1,32 @@
+@import "/styles/variables.scss";
+
+.InfoItem {
+    margin-bottom: 2.5rem;
+    max-width: 430px;
+    @include tablet {
+        max-width: 480px;
+    }
+    @include desktop {
+        max-width: 430px;
+    }
+    &__label {
+        display: inline;
+        padding: 4px 14px;
+        border-radius: 25px;
+        & > span {
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+    &__info {
+        & > h3 {
+            margin-top: 1.3rem;
+            font-weight: 600;
+        }
+        & > p {
+            margin-top: 16px;
+            color: #777e90;
+            font-size: 1.08em;
+        }
+    }
+}

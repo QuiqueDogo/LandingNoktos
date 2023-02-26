@@ -1,0 +1,38 @@
+.contact{
+  &__main_container{
+    padding: 40px 0;
+  }
+
+  &__header_container{
+    margin-bottom: 80px;
+  }
+
+  &__title{
+    font-family: "Raleway Bold", serif;
+    text-align: center;
+    color: $primary;
+  }
+
+  &__subtitle{
+    font-family: "Raleway SemiBold", serif;
+    text-align: center;
+    font-size: 25px;
+    color: $primary;
+  }
+
+  &__text{
+    font-family: "Raleway Medium", serif;
+    text-align: center;
+    font-size: 18px;
+    color: $primary;
+  }
+
+  &__text_contact {
+    font-family: "Raleway Medium", serif;
+    font-size: 15px;
+    color: $primary;
+    & i{
+      color: $accent;
+    }
+  }
+}

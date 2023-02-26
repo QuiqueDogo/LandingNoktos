@@ -1,0 +1,19 @@
+@import "/styles/variables.scss";
+
+.Pagination {
+    display: flex;
+    column-gap: 24px;
+    &__item {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        & > span {
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+}

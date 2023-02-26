@@ -1,0 +1,15 @@
+.billingInformation{
+  min-height: 600px;
+
+  &__main_container{
+    background-color: $background;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+
+    @media(max-width: 640px) {
+      padding: 30px;
+    }
+  }
+
+}

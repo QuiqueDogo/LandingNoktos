@@ -1,0 +1,41 @@
+.Hierarchy {
+    margin: 16px 0 40px 0;
+    display: flex;
+    column-gap: 32px;
+    & > div:first-child {
+        min-width: 150px;
+        padding: 7px 16px;
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        text-align: center;
+        & > span {
+            color: #474747;
+            font-size: 14.5px;
+            font-weight: 600;
+        }
+    }
+    & > div:last-child {
+        position: relative;
+        & > select {
+            border: none;
+            outline: none;
+            color: #474747;
+            font-size: 15px;
+            background: #f8f8f8;
+            padding: 7px 40px 7px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        & > div {
+            color: #c4c4c4;
+            border-left: 1px solid #c4c4c4;
+            pointer-events: none;
+            position: absolute;
+            top: 15%;
+            right: 5px;
+        }
+    }
+}

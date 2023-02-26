@@ -1,0 +1,145 @@
+@import "/styles/variables.scss";
+$background-url: "/img/LandingPage/FirstPage/wave.png";
+
+.FirstPage {
+    margin-top: 1rem;
+    font-size: 16px;
+    background-size: contain;
+    background-position-y: 3%;
+    background-repeat: no-repeat;
+    background-image: url($background-url);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "DM Sans Regular";
+    @include tablet {
+        background-position-y: 5%;
+    }
+    @include desktop {
+        background-size: 120% 330px;
+        background-position-y: -15%;
+    }
+    &__info {
+        width: 90%;
+        margin-top: 72px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include desktop {
+            text-align: left;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        & > div:first-child {
+            @include desktop {
+                width: 48%;
+            }
+            & > div:first-child {
+                & > span {
+                    color: $accent;
+                    font-size: 4.6vw;
+                    font-weight: 600;
+                    @include tablet {
+                        font-size: 2em;
+                    }
+                }
+                & > p:nth-child(2) {
+                    margin-left: 6px;
+                    font-size: 4.6vw;
+                    font-weight: 600;
+                    display: inline;
+                    @include tablet {
+                        font-size: 2em;
+                    }
+                }
+                & > div:last-child {
+                    display: flex;
+                    justify-content: center;
+                    @include desktop {
+                        justify-content: flex-start;
+                    }
+                    & > p {
+                        width: 95%;
+                        margin-top: 20px;
+                        color: #777e90;
+                        font-size: 3.3vw;
+                        letter-spacing: 0.5px;
+                        @include tablet {
+                            width: 80%;
+                            font-size: 1.2em;
+                        }
+                        @include desktop {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            & > div:last-child {
+                margin-top: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include tablet {
+                    margin-top: 56px;
+                }
+                @include desktop {
+                    margin-top: 40px;
+                    justify-content: flex-start;
+                }
+            }
+        }
+        &__video {
+            display: flex;
+            justify-content: center;
+            @include desktop {
+                width: 48%;
+                flex-direction: column;
+            }
+            & > div {
+                width: 90%;
+                margin-top: 64px;
+                border-radius: 30px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include tablet {
+                    width: 80%;
+                }
+                @include desktop {
+                    width: 100%;
+                    margin-top: 0;
+                }
+                & > video {
+                    width: 100%;
+                }
+            }
+            & > p {
+                margin-top: 24px;
+                color: #777e90;
+                font-size: 1em;
+                text-align: center;
+            }
+        }
+    }
+    &__items {
+        width: 90%;
+        padding: 0 16px;
+        margin-top: 4rem;
+        background-color: #fcfcfd;
+        border-radius: 30px;
+        box-shadow: 0px 1.99px 9.46px 0px rgba(0, 0, 0, 0.08);
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        @include tablet {
+            width: 70%;
+        }
+        @include desktop {
+            width: 90%;
+        }
+    }
+}

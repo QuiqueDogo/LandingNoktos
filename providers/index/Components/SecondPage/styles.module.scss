@@ -1,0 +1,116 @@
+@import "/styles/variables.scss";
+$background: "/img/LandingPage/SecondPage/wave.png";
+
+@mixin gradientText {
+    background: linear-gradient(#2698ea, #76ceff, #1f1d67);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.SecondPage {
+    margin-top: 9rem;
+    font-size: 16px;
+    font-family: "DM Sans Regular";
+    background-image: url($background);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-areas:
+        "info"
+        "image"
+        "items";
+    @include tablet {
+        font-size: 18px;
+    }
+    @include desktop {
+        background-position-y: 100%;
+        grid-template-columns: 1.2fr 1fr;
+        grid-column: 16px;
+        grid-template-areas:
+            "info image"
+            "items image";
+    }
+    &__info {
+        grid-area: info;
+        display: flex;
+        justify-content: center;
+        visibility: hidden;
+        @include desktop {
+            justify-content: flex-end;
+        }
+        & > div {
+            width: 95%;
+            margin-bottom: 64px;
+            text-align: center;
+            @include desktop {
+                width: 85%;
+                margin-bottom: 48px;
+                text-align: left;
+            }
+            & > h2 {
+                margin-bottom: 36px;
+                font-size: 1.45em;
+                font-weight: 600;
+                @include gradientText;
+            }
+            & > p {
+                margin: 0;
+                line-height: 36px;
+                font-size: 1.8em;
+                font-weight: 600;
+            }
+            & > p:last-child {
+                color: $accent;
+                font-size: 1.75em;
+            }
+        }
+    }
+    &__image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        grid-area: image;
+        visibility: hidden;
+        @include desktop {
+            align-items: center;
+            justify-content: flex-start;
+        }
+        & > div {
+            min-width: 350px;
+            max-width: 460px;
+            width: 80%;
+            @include tablet {
+                width: 450px;
+            }
+            @include desktop {
+                width: 90%;
+            }
+            & > img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        grid-area: items;
+        visibility: hidden;
+        & > div {
+            width: 75%;
+            max-width: 400px;
+            margin-top: 48px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include tablet {
+                margin-top: 64px;
+            }
+            @include desktop {
+                width: 80%;
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,309 @@
+.index2 {
+  &__boton_azul {
+    background-color: $accent;
+    border: $accent;
+    font-family: "Raleway Bold", serif;
+    padding: 10px 50px;
+    border-radius: 15px;
+    margin-top: 10px;
+    color: white;
+
+    &:hover {
+      background-color: $accent;
+      border: $accent;
+      color: white;
+    }
+    &_verde {
+      background-color: #0eae4e;
+
+      &:hover {
+        background-color: #0eae4e;
+        border: #0eae4e;
+        color: white;
+      }
+    }
+    &_rosa {
+      background-color: #fb3199;
+
+      &:hover {
+        background-color: #fb3199;
+        border: #fb3199;
+        color: white;
+      }
+    }
+    &_naranja {
+      background-color: $darkPrimary;
+
+      &:hover {
+        background-color: $darkPrimary;
+        border: $darkPrimary;
+        color: white;
+      }
+    }
+  }
+  &__video {
+    border: 2px solid white;
+    padding: 0px;
+  }
+  &__header {
+    width: 100%;
+    background-color:$blueLight;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    @media (max-width: 420px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__header_prueba {
+    width: 100%;
+    background-color: $darkPrimary;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    @media (max-width: 420px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__header_gestiona {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    @media (max-width: 420px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  &__text_white_header {
+    font-family: "Roboto Regular";
+    font-size: 30px;
+    color: $darkPrimary;
+    &_white {
+      color: $white;
+      font-family: "Roboto Regular";
+      font-size: 35px;
+      @media (max-width: 420px) {
+        font-size: 30px;
+      }
+    }
+    &_monedas {
+      font-family: "Roboto Bold";
+      font-size: 40px;
+
+      &_azulf {
+        color: $darkPrimary;
+      }
+    }
+    @media (max-width: 420px) {
+      font-size: 30px;
+    }
+  }
+  &__text_blue {
+    font-family: "Raleway Bold";
+    font-size: 35px;
+    color: $darkPrimary;
+    @media (max-width: 420px) {
+      font-size: 23px;
+    }
+    &_normal {
+      color: $darkPrimary;
+      font-family: "Raleway Regular";
+      @media (max-width: 420px) {
+        font-size: 23px;
+      }
+    }
+    &_azulf {
+      color: $darkPrimary;
+      font-size: 30px;
+      font-family: "Roboto Regular";
+    }
+    &_amarillo {
+      color: #ffb530;
+      font-size: 30px;
+    }
+  }
+  &__seccionDos {
+    margin-top: 70px;
+    background-color: $blueLight;
+  }
+  &__separacion {
+    width: 29%;
+    height: 25px;
+    background-color: $darkPrimary;
+  }
+  &__separacion2 {
+    width: 29%;
+    height: 25px;
+    background-color: $darkPrimary;
+    float: right;
+  }
+  &__texto {
+    text-align: center;
+    width: 40%;
+  }
+  &__imgReserva {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: #f1f4f9;
+  }
+  &__texto_Reserva {
+    font-family: "Roboto Bold";
+    font-size: 50px;
+    color: $accent;
+    @media (max-width: 420px) {
+      font-size: 40px;
+    }
+  }
+  &__subtexto_Reserva {
+    font-family: "Raleway Regular";
+    font-size: 22px;
+    &_blue {
+      color: $accent;
+      font-family: "Roboto Bold";
+      font-size: 25px;
+    }
+    &_white {
+      color: white;
+      @media (max-width: 420px) {
+        font-size: 18px;
+      }
+    }
+  }
+  &__texto_1Nokto {
+    text-decoration: none !important;
+    color: #067cc5;
+  }
+  &__llamanosAhora {
+    color: #4f4e5b;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    @media (max-width: 420px) {
+      font-size: 23px;
+    }
+    &_borde {
+      border-bottom: 5px solid $accent;
+    }
+  }
+
+  &__boton_amarillo {
+    background-color: #ffb530;
+    border: #ffb530;
+    font-family: "Raleway Bold", serif;
+    padding: 10px 50px;
+    border-radius: 15px;
+    margin-top: 10px;
+    color: white;
+
+    &:hover {
+      background-color: #ffb530;
+      border: #ffb530;
+      color: white;
+    }
+  }
+
+  &__section_comofunciona {
+    background-color: #aee2f7;
+    padding-top: 2%;
+    padding-bottom: 30px;
+  }
+
+  &__texto_soporte {
+    font-size: 40px;
+    color: $accent;
+    font-family: "Roboto Bold";
+
+    &_naranja {
+      color: #ff3629;
+      padding-left: 25px;
+    }
+  }
+  &__text_azulf_end {
+    font-family: "Roboto Bold";
+    font-size: 30px;
+    color: $darkPrimary;
+    display: flex;
+    justify-content: center;
+
+    &_chico {
+      font-family: "Roboto Regular";
+    }
+  }
+
+  &__section_final {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  &__botones_final {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    @media (max-width: 420px) {
+      flex-direction: column;
+      justify-content: center;
+      margin: 5px 30px;
+    }
+  }
+  &__pasos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    @media (max-width: 420px) {
+      flex-direction: column;
+    }
+  }
+  &__paso_columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__numero {
+    background-color: $accent;
+    color: white;
+    border-radius: 999px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 31px;
+    font-family: "Roboto Bold";
+  }
+
+  &__img_facturacion {
+    width: 50%;
+    height: 50%;
+    @media (max-width: 420px) {
+      width: 30%;
+      height: 30%;      
+    }
+  }
+
+  &__comofunciona {
+    width: 70%;
+    height: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  &__asterisco{
+    font-size: .8rem;
+  }
+}

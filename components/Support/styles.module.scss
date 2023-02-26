@@ -1,0 +1,93 @@
+@import "/styles/variables.scss";
+
+@mixin gradientTitle {
+    color: transparent;
+    background-clip: text;
+    background: linear-gradient(#2698ea, #76ceff, #1f1d67);
+    -webkit-background-clip: text;
+}
+
+.Support {
+    margin-top: 6rem;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    font-family: "DM Sans Regular";
+    @include tablet {
+        font-size: 17px;
+    }
+    @include desktop {
+        margin-top: 9rem;
+    }
+    &__container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        @include desktop {
+            text-align: left;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            column-gap: 32px;
+        }
+        &__info {
+            max-width: 500px;
+            margin-bottom: 56px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            visibility: hidden;
+            @include desktop {
+                width: 60%;
+                align-items: flex-start;
+            }
+            & > h2 {
+                margin-bottom: 36px;
+                font-size: 1.4em;
+                font-weight: 600;
+                letter-spacing: 1px;
+                @include gradientTitle;
+            }
+            & > p:nth-child(2) {
+                margin-bottom: 48px;
+                font-size: 2.05em;
+                font-weight: 600;
+                line-height: 36px;
+            }
+            & > p:nth-child(3) {
+                width: 80%;
+                padding-bottom: 20px;
+                color: #777e90;
+                font-size: 1.1em;
+                border-bottom: 1px solid rgba(100, 100, 108, 0.4);
+                text-align: justify;
+                letter-spacing: 0.5px;
+            }
+        }
+        &__image {
+            margin-bottom: 120px;
+            width: 100%;
+            filter: sepia(20%);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            visibility: hidden;
+            @include desktop {
+                width: 40%;
+            }
+            &__box {
+                width: 85%;
+                max-width: 380px;
+                position: relative;
+                @include desktop {
+                    width: 100%;
+                }
+                & > img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

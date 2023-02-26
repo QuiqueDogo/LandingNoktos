@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+
+.card__container{
+    background-color: #161616;
+    padding: 60px 20px;
+    border-radius: 15px;
+    min-width: 700px;
+    overflow: hidden;
+    max-height: 200px;
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.text{
+    font-family: "Inter Medium", serif;
+    font-size: 25px;
+    color: white;
+    margin: 0;
+}
+.circle_sm{
+    &__center{
+        background-color: rgb(51, 206, 255);
+        width: 800px;
+        height: 800px;
+        border-radius: 100%;
+        position: absolute;
+        left: -290px;
+        top: -50px
+
+    }
+
+    &__left{
+        background-color: rgb(0, 194, 255);
+        width: 800px;
+        height: 800px;
+        border-radius: 100%;
+        position: absolute;
+        left: -370px;
+        top: -50px
+    }
+}
+
+.circle_lg{
+    &__center{
+        background-color: rgb(51, 206, 255);
+        width: 1400px;
+        height: 1400px;
+        border-radius: 100%;
+        position: absolute;
+        left: -290px;
+        top: -140px
+
+    }
+
+    &__left{
+        background-color: rgb(0, 194, 255);
+        width: 1400px;
+        height: 1400px;
+        border-radius: 100%;
+        position: absolute;
+        left: -370px;
+        top: -140px
+    }
+}
+
+.button{
+    color: white;
+    font-family: "Inter Medium", serif;
+    background-color: $accent;
+    border-radius: 10px;
+    width: 60%;
+    padding: 1px;
+    &:hover{
+        color: whitesmoke;
+    }
+    height: 50px;
+}

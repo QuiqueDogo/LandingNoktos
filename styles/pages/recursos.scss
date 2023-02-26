@@ -1,0 +1,217 @@
+.recursos {
+  //Seccion1
+  &__texto_end {
+    color: white;
+    font-size: 30px;
+    font-family: "Roboto Bold";
+    text-align: center;
+    padding-top: 10px;
+    @media (max-width: 420px) {
+      font-size: 25px;
+    }
+  }
+  &__texto_solo {
+    padding-left: 70px;
+  }
+  &__section_orange {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9f9;
+    color: $darkPrimary;
+    @media (max-width: 420px) {
+      flex-direction: column;
+    }
+  }
+  &__tReservaT {
+    font-family: "Raleway Bold", sans-serif;
+    font-size: 40px;
+    color: $darkPrimary;
+    @media (max-width: 420px) {
+      font-size: 30px;
+    }
+  }
+
+  &__tReserva {
+    font-family: "Raleway Bold", sans-serif;
+    font-size: 40px;
+    color: $darkPrimary;
+    @media (max-width: 420px) {
+      font-size: 30px;
+    }
+  }
+
+  &__sReserva {
+    font-family: "Raleway Medium", sans-serif;
+    font-size: 20px;
+  }
+
+  &__video {
+    width: 50%;
+    margin-left: 22%;
+    margin-top: 15px;
+    & figure {
+      width: 100%;
+      & video {
+        width: 100%;
+      }
+    }
+    @media (max-width: 420px) {
+      width: 100%;
+      margin-left: 0%;
+    }
+  }
+
+  &__section_white {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: $blueLight;
+    color: $darkPrimary;
+    @media (max-width: 420px) {
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
+
+  &__mejoresOpc {
+    font-family: "Raleway Bold", sans-serif;
+    font-size: 32px;
+    @media (max-width: 420px) {
+      font-size: 25px;
+    }
+  }
+
+  &__textRegularE {
+    font-family: "Raleway Regular", sans-serif;
+    font-size: 20px;
+    color: $white;
+    text-align: center;
+    @media (max-width: 420px) {
+      font-size: 16px;
+    }
+  }
+
+  &__textRegular {
+    font-family: "Raleway Regular", sans-serif;
+    font-size: 20px;
+    @media (max-width: 420px) {
+      font-size: 16px;
+    }
+  }
+
+  &__section_white_reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    color: $darkPrimary;
+    @media (max-width: 420px){
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__texto {
+    color: $darkPrimary;
+    font-size: 30px;
+    font-family: "Roboto Bold";
+    @media (max-width: 420px) {
+      font-size: 25px;
+    }
+  }
+
+  &__contenedor_final {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 25%;
+    @media (max-width: 420px) {
+      margin-top: 30px;
+    }
+  }
+
+  &__img {
+    width: 80%;
+    height: 80%;
+    // padding-top: 60px;
+    @media (max-width: 420px) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__img_cambios {
+    width: 90%;
+    height: 90%;
+  }
+  &_resultados_hoteles{
+    width: 50%;
+    height: 50%;
+  }
+  &__sec1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    @media (max-width: 420px) {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Raleway Bold";
+    color: $accent;
+    &__white {
+      color: $white;
+    }
+  }
+  &__subtitle {
+    font-size: 23px;
+    font-family: "Raleway Regular";
+    font-weight: bold;
+    color: $accent;
+    &__white {
+      color: $white;
+    }
+  }
+  //Seccion2
+  &__sec_azul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent;
+    margin-top: 2.5%;
+    padding: 3%;
+    @media (max-width: 420px) {
+      display: flex;
+      flex-direction: column-reverse !important;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    margin-top: 5%;
+    margin-left: 3%;
+
+    @media (max-width: 770px) {
+      margin-top: 5%;
+      margin-left: 3%;
+    }
+  }
+}

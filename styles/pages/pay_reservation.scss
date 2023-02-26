@@ -1,0 +1,428 @@
+.pay_reservation{
+
+  &__main_container{
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width: 640px) {
+      padding: 30px;
+    }
+  }
+
+  &__header_text{
+    font-family: "Raleway Bold", serif;
+    font-size: 60px;
+    color: $white;
+    margin: 0 20px 0 0;
+  }
+
+  &__name_header{
+    font-family: "Raleway SemiBold", serif;
+    font-size: 20px;
+    color: $white;
+
+  }
+
+  &__rating_container{
+    color: $primary !important;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    & p{
+      color: $textGrayLight;
+      font-family: "Raleway Medium", serif;
+      margin-right: 5px;
+      font-size: 18px;
+    }
+  }
+
+  &__card_info_reservation{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+
+  &__card{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__card_inner_container{
+    padding: 30px;
+  }
+
+  &__card_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    color: $white;
+    padding: 20px 0;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &__card_inner_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    color: $white;
+    padding: 20px 0;
+  }
+
+  &__header_marketplace{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__header_marketplace_button_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & button{
+      background-color: $white !important;
+      border: $white;
+      color: $primary !important;
+    }
+  }
+
+  &__title_card{
+    font-family: "Raleway Bold", serif;
+    font-size: 25px;
+    color: $primary;
+  }
+
+  &__title_card_info_pay{
+    font-family: "Raleway Bold", serif;
+    font-size: 25px;
+    color: $white;
+    margin: 0 0 10px 0 ;
+  }
+
+  &__name_container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__name{
+    font-family: "Raleway Regular", serif;
+    font-size: 18px;
+    color: $primary;
+
+    & span{
+      color: $textGrayLight;
+      font-family: "Raleway Medium", serif;
+    }
+  }
+
+  &__address_container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__address{
+    font-family: "Raleway Regular", serif;
+    font-size: 18px;
+
+    & span{
+      color: $textGrayLight;
+      font-family: "Raleway Medium", serif;
+    }
+  }
+
+  &__description_container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__description{
+    font-family: "Raleway Regular", serif;
+    font-size: 18px;
+
+    & span{
+      color: $textGrayLight;
+      font-family: "Raleway Medium", serif;
+    }
+  }
+
+  &__dates_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Raleway Regular", serif;
+    font-size: 18px;
+
+    & span{
+      color: $textGrayLight;
+      font-family: "Raleway Medium", serif;
+      margin-left: 5px;
+    }
+  }
+
+  &__night{
+    font-family: "Raleway Regular", serif;
+    font-size: 18px;
+
+    & span{
+      color: $textGrayLight;
+      font-family: "Raleway Medium", serif;
+    }
+  }
+
+  &__rooms_container{
+    margin-top: 20px;
+  }
+
+  &__room_info{
+    display: flex;
+    flex-direction: row;
+    & p{
+      font-family: "Raleway Regular", serif;
+      font-size: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__traveller_container{
+    margin-top: 40px;
+  }
+
+  &__info_traveller_container{
+    margin-top: 30px;
+    & p{
+      font-family: "Raleway Light", serif;
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title_pay{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Raleway Medium", serif;
+    font-size: 18px;
+
+  }
+
+  &__title_pay_tokens{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: "Raleway SemiBold", serif;
+    font-size: 18px;
+    color: $accent;
+  }
+
+  &__row_balance{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__row_with_icon{
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__row_balance_text{
+    color: $primary;
+    font-family: "Raleway Medium", serif;
+    margin-bottom: 0px;
+  }
+
+  &__row_balance_value{
+    color: $accent;
+    font-family: "Raleway SemiBold", serif;
+    margin-bottom: 5px;
+  }
+
+  &__container_button_pay{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__price_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Raleway Medium", serif;
+  }
+
+  &__card_brands_container{
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 70%;
+    }
+  }
+
+  &__payment_method_container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+  }
+
+  &__payment_method_text_container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__payment_method{
+    font-family: "Raleway Regular", serif;
+    margin: 0;
+  }
+
+  &__payment_change_method{
+    font-family: "Raleway Regular", serif;
+    cursor: pointer;
+    color: $accent;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &__modal_title{
+    font-family: "Raleway Bold", serif;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  &__modal_add_card_container{
+    background-color: $background;
+    border-radius: 10px;
+    padding: 20px
+  }
+
+  &__add_card_title{
+    font-family: "Raleway Medium", serif;
+    font-size: 20px;
+  }
+
+  &__my_cards_container{
+    margin-bottom: 30px;
+  }
+
+  &__card_card_container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1) !important;
+    cursor: pointer;
+    margin: 15px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+
+    & p{
+      margin-bottom: 0;
+      text-align: start;
+      font-family: "Raleway Medium", serif;
+      font-size: 14px;
+      & span{
+        font-family: "Raleway Light", serif;
+
+      }
+    }
+  }
+
+  &__card_buy_token{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1) !important;
+    cursor: pointer;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    & p{
+      margin-bottom: 2px;
+      margin-top: 2px;
+      text-align: center;
+      font-family: "Raleway Medium", serif;
+      font-size: 14px;
+
+      & span{
+        font-family: "Raleway Light", serif;
+
+      }
+    }
+  }
+
+  &__select_card{
+    background-color: $accent;
+    color: white;
+  }
+
+  &__add_card_container{
+    margin-top: 20px;
+  }
+
+  &__buy_tokens{
+    margin-top: 10px;
+    font-family: "Raleway Regular", serif;
+    cursor: pointer;
+    color: $accent;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &__button_pay{
+    background-color: $accent;
+    border: solid 2px $accent;
+    font-family: "Raleway Regular", serif;
+    padding: 5px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 17px $accentOpacity;
+    color: white;
+    margin: 0 5px;
+    &:hover{
+      background-color: $darkAccent;
+      border: solid 2px $darkAccent;
+      color: white;
+    }
+  }
+
+  &__outlined_button{
+    border-radius: 20px;
+    border: solid 2px $accent;
+    padding: 5px 50px;
+    font-family: "Raleway Regular", serif;
+    margin: 0 5px;
+
+    &:hover{
+      color: $darkAccent;
+      border: solid 2px $darkAccent;
+      background-color: $accentOpacity;
+      color: white;
+    }
+  }
+}

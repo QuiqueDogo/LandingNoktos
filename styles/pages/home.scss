@@ -1,0 +1,507 @@
+main{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+}
+.section-home{
+	width: 100%;
+	margin: 60px 0;
+	padding: 0;
+}
+
+.content-section1{
+	//height: 100%;
+	//background-image: url("/img/home/viajera.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100%;
+}
+
+.content-img-ciudad{
+	position: absolute;
+	width: 60%;
+	height: 100%;
+	z-index: 1;
+	right: 0px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-text{
+	width: 100%;
+	height: auto;	
+}
+.context-text-primary{
+    font-family: "Raleway Black", serif;
+    font-size: 30px;
+}
+.content-text-secundary{
+    font-family: "Raleway Medium", serif;
+    font-size: 15px;
+	margin: 40px 0;
+}
+.content-input-search{
+	width: 100%;
+	height: auto;
+}
+.content-search{
+	width: 100%;
+	border: 1px #f8fdff;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+}
+.img-ubicacion{
+	padding: 0px;
+	width: 10%;
+	height: 30px;
+	border: 0px;
+	margin-left: 10px;
+}
+.input-search{
+	padding-left: 10px;
+	width:80%;
+	height: 30px;
+    border: 0px;
+    font-family: "Raleway Regular", serif;
+    font-size: 14px;
+	color: darkgray;
+}
+.a-search{
+	padding: 0px;
+	width: 10%;
+	border: 0px;
+	background-color: white;
+}
+.img-search{
+	width: 85%;
+	height: 60px;
+	border: 0px;
+	
+	
+}
+.ubicacionfa{
+	color: $accent;
+}
+.botones-sectionuno{
+	width: 83%;
+	margin: 30px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	@media only screen and (max-width: 1200px) {
+		flex-direction: column;
+		height: 6rem;
+	}
+}
+.boton-sectionuno{
+	height: 35px;
+	width: 130px;
+	border-radius: 20px;
+	margin: 5px;
+}
+
+.texto-sectionuno{
+	margin: 0 0 100px 0;
+	width: 100%;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	
+}
+.text-tres{
+	font-family: "Raleway Bold", serif;
+	font-size: 25px;
+}
+
+.text-cuatro{
+	font-family: "Raleway Regular", serif;
+	font-size: 15px;
+	color: $textGrayLight;
+}
+.section-home-dos{
+	width: 100%;
+}
+.content-modelonoktos{
+	padding: 0 200px;
+
+	@media (max-width: 1200px){
+		padding: 0 100px;
+	}
+
+	@media (max-width: 500px){
+		padding: 0 50px;
+	}
+}
+.texto-modelonoktos{
+	width: 100%;
+	margin-bottom: 30px;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+.txt-modelonoktos-primero{
+	font-family: "Raleway Bold", serif;
+	font-size: 35px;
+}
+.txt-modelonoktos-segundo{
+	font-family: "Raleway Regular", serif;
+	font-size: 15px;
+}
+
+.p-content{
+	width: 100%;
+	text-align: justify;
+}
+.sabermas{
+	background-color: $accent;
+		border: $accent;
+		font-family: "Raleway Regular", serif;
+		padding: 8px 35px;
+		border-radius: 20px;
+		box-shadow: 0 0 17px $accentOpacity;
+		&:hover{
+		  background-color: $darkAccent;
+		  border: $darkAccent;
+		}
+}
+
+.section-home-tres{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-section-tres{
+	width: 80%;
+
+	@media (max-width: 500px){
+		margin-top: 50px;
+	}
+}
+
+.destinos{
+	text-align: center;
+	font-family: "Raleway Black", serif;
+	margin-bottom: 5%;
+}
+.containers-destinos{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: flex-start;
+
+	@media screen and (max-width: 900px) {
+		flex-direction: row;
+	}
+}
+
+
+.information{
+	width: 23%;
+	bottom: 0px;
+	left: 1px;
+	background-color:white;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 0px 5px 10px 1px #e2e1e1;
+	padding: 20px;
+
+	@media screen and (max-width: 900px) {
+		width: 45%;
+
+		margin-top: 25px;
+	}
+}
+
+.img-hotels{
+	width: 100%;
+	max-height: 150px;
+}
+.ubicacion-dos{
+	text-align: right;
+	margin: 2%;
+}
+.img-ubicacion{
+	width: 20%;
+	height: 20%;
+}
+.txt-brandedhotels{
+	color: #000000;
+	padding: 10px;
+}
+.a-vdestinos{
+	color: #979797;
+}
+.txt-hotels{
+	color: #00c2ff;
+	font-family: "Raleway Bold";
+	font-size: 13px;
+}
+.div-boton-destinos{
+	margin-top: 7%;
+	text-align: center;
+}
+.boton-destinos{
+	background-color: $accent;
+		border: $accent;
+		font-family: "Raleway Regular", serif;
+		padding: 10px 50px;
+		border-radius: 20px;
+		box-shadow: 0 0 17px $accentOpacity;
+		&:hover{
+		  background-color: $darkAccent;
+		  border: $darkAccent;
+		}
+}
+.section-home-cuatro{
+	width: 100%;
+	margin: 80px 0;
+	padding: 0px;
+}
+
+.section-cuatro{
+}
+
+.populares{
+	text-align: center;
+	font-family: "Raleway Bold";
+}
+.nav{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.ul-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	z-index: 3;
+  }
+.li-nav {
+	float: left;
+}
+.li-nav .a-nav {
+	display: block;
+	padding: 8px;
+	background-color: #fcfcfc;
+	color: grey;
+	font-family: "Raleway Medium";
+}
+.li-nav .a-nav:hover { 
+	color: #00c2ff;
+ }
+.content-imagen{
+	margin-top: 2%;
+}
+.content-information{
+	position: relative;
+}
+.img-targets{
+	border-radius: 20px 20px 0px 0px;
+	border: 1px white;
+	width: 240px; 
+	height: 150px;
+}
+.target{
+	width: 240px;
+	height: 300px;
+	border: 1px solid #eaecee;
+	border-radius:20px;
+	box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.20);
+}
+
+.titulo{
+	margin-top: 10px;
+    font-family: "Raleway Medium", serif;
+    color: #00c2ff;
+    text-align: center;
+}
+.input-stars[type="radio"] {
+	display: none;	
+}
+.label-stars {
+	color: grey;
+}
+.stars{
+	margin-left: 6%;
+}
+.clasification {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+.img-luna{
+	margin-left: 6%;
+	margin-top: 2%;
+}
+.txt-luna{
+	font-family: "Raleway Regular", serif;
+}
+.total{
+	font-size: 10px;
+	font-family: "Raleway Thin", serif;
+}
+.img-token{
+	margin-left: 6%;
+	margin-top: 2%;
+}
+.txt-token{
+	color: #00c2ff;	
+	font-family: "Raleway Regular", serif;
+}
+.ver-information{
+	border-radius: 20px;
+	height: 25px;
+	width: 90px;
+	border: #00c2ff 1px solid;
+	background-color: #00c2ff;
+	color: #fcfcfc;
+	text-align: center;
+	font-family: "Raleway Regular", serif;
+	font-size: 12px;
+}
+.boton-ver{
+	text-align: center;
+	margin-top: 7%;
+}
+.content-partner{
+	width: auto;
+	height: 100%;
+}
+.partner{
+	width: 100%;
+	margin: 0 0 40px 0;
+	padding: 0px;
+}
+.titulo-partner{
+	text-align: center;
+	margin: 5% 0;
+	font-family: "Raleway Bold", serif;
+}
+
+.divs-partner{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	@media (max-width: 800px){
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.item-partner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@media (max-width: 800px){
+		margin: 20px;
+	}
+}
+
+.textos-partner{
+	width: 100%;
+	height: 20%;
+	font-family: "Raleway Bold", serif;
+	& p{
+		text-align: center;
+	}
+}
+.div-boton-partner{
+	margin-top: 10%;
+	text-align: center;
+}
+.boton-partner{
+	background-color: $accent;
+	border: $accent;
+	font-family: "Raleway Regular", serif;
+	padding: 10px 50px;
+	border-radius: 20px;
+	box-shadow: 0 0 17px $accentOpacity;
+	&:hover{
+		  background-color: $darkAccent;
+		  border: $darkAccent;
+	}
+}
+
+
+/////// Código extra
+
+.section-home-dos-bottom{
+	margin: 100px;
+
+
+	@media(max-width: 800px) {
+		margin: 0px;
+	}
+}
+
+.p-boton-content{
+	font-family: "Raleway Regular", serif;
+	font-size: 15px;
+}
+
+.container-section-home{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	@media(max-width: 800px) {
+		flex-direction: column;
+	}
+}
+
+.content-section-uno{
+	width: 50%;
+
+	@media(max-width: 800px) {
+		width: 100%;
+	}
+}
+
+// Hoteles populares
+
+.popularHotel{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__container{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 40px 0;
+		height: 100%;
+		width: 80%;
+	}
+}
+
+
+
+
+.swiper-container {
+	width: 100%;
+	@media (max-width: 640px) {
+
+	}
+}
+
+.swiper-slide{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

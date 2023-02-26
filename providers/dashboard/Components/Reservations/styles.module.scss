@@ -1,0 +1,29 @@
+@import "../../../../styles/variables.scss";
+.Reservations {
+    margin-bottom: 64px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: minmax(auto, 500px);
+    justify-content: center;
+    row-gap: 32px;
+    @media screen and (min-width: 950px) {
+        column-gap: 32px;
+        grid-template-columns: 1fr 1.1fr;
+    }
+    &__showGraph {
+        margin: 32px;
+        text-align: center;
+        & > button {
+            width: 250px;
+            padding: 16px 0;
+            background-color: #1e2739;
+            border: none;
+            border-radius: 22px;
+            & > span {
+                margin-left: 8px;
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+    }
+}

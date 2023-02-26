@@ -1,0 +1,37 @@
+main{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+    height: auto;
+    background-color: #fcfcfc;
+}
+.privacity{
+    &_container{
+        padding-left: 2rem;
+    }
+    &_textospan{
+        color: $accent;
+        font-size: 1.7rem;
+        font-family: "Raleway Light", serif;
+    }
+    &_textop{
+        font-size: 1rem;
+        font-family: "Raleway Regular", serif;
+        text-align: justify;
+    }
+    &_textospan_dos{
+        color: $accent;
+        font-size: 1.5rem;
+        font-family: "Raleway Light", serif;
+    }
+    &_title{
+        color: $accent;
+        font-size: 2rem;
+        font-family: "Raleway Regular", serif;
+        text-align: center;
+    }
+    &_header{
+        display: flex;
+        justify-content: center;
+    }
+}

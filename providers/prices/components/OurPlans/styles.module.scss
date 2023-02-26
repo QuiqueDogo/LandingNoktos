@@ -1,0 +1,32 @@
+@import "/styles/variables.scss";
+
+.OurPlans {
+  margin-top: 6rem;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  font-family: "DM Sans Regular";
+  @include tablet {
+    font-size: 17px;
+  }
+  @include desktop {
+    font-size: 18px;
+  }
+  &__container {
+    width: 90%;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      max-width: 480px;
+    }
+    &__title {
+      & > h3 {
+        font-size: 2.2em;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import "/styles/variables.scss";
+
+.InfoPage {
+    margin: 6rem 0 12rem 0;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-family: "DM Sans Regular";
+    @include tablet {
+        font-size: 18px;
+    }
+    @include desktop {
+        margin: 9rem 0 15rem 0;
+        font-size: 16px;
+    }
+    &__container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include desktop {
+            display: grid;
+            column-gap: 32px;
+            grid-template-areas:
+                "title title"
+                "image items"
+                "image items";
+            grid-template-columns: 1fr 1fr;
+            align-items: flex-start;
+            justify-items: center;
+        }
+        &__title {
+            max-width: 450px;
+            margin-bottom: 3rem;
+            text-align: center;
+            @include desktop {
+                max-width: 525px;
+                margin-bottom: 5rem;
+                display: flex;
+                justify-content: center;
+                grid-area: title;
+            }
+            & > h2 {
+                font-weight: 600;
+                @include desktop {
+                    font-size: 2.3em;
+                }
+            }
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include desktop {
+                grid-area: items;
+            }
+            &__button {
+                margin-top: 2rem;
+                @include desktop {
+                    width: 100%;
+                    margin-top: 1rem;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+            }
+        }
+        &__image {
+            & > img {
+                width: 100%;
+                max-width: 400px;
+                grid-area: image;
+                @include desktop {
+                    max-width: 465px;
+                }
+            }
+        }
+    }
+}

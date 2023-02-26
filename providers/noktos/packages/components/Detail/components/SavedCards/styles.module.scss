@@ -1,0 +1,33 @@
+@import "/styles/variables.scss";
+
+.SavedCards {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  &__container {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__addCard {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    & > label {
+      margin: 0;
+      color: #000;
+      font-weight: 600;
+    }
+  }
+  &__icons {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    & > div {
+      width: 34px;
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+}

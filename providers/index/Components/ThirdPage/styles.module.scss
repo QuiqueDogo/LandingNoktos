@@ -1,0 +1,78 @@
+@import "/styles/variables.scss";
+
+.ThirdPage {
+    margin-top: 80px;
+    font-size: 16px;
+    font-family: "DM Sans Regular";
+    display: grid;
+    grid-template-areas:
+        "info"
+        "items";
+    @include tablet {
+        font-size: 18px;
+    }
+    @media screen and (min-width: 1265px) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+        grid-template-areas:
+            "info info"
+            "image items"
+            "image items";
+    }
+    // TITLE
+    & > div:first-child {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: info;
+        & > h2 {
+            font-size: 2.4em;
+            font-weight: 600;
+        }
+        & > span {
+            color: #858a8f;
+            font-size: 1.2em;
+        }
+    }
+    // ITEMS
+    & > div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        grid-area: items;
+        & > div {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 32px;
+            @include tablet {
+                width: 70%;
+                row-gap: 40px;
+            }
+            @media screen and (min-width: 1265px) {
+                width: 100%;
+                gap: 8px;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    // IMAGE
+    & > div:nth-child(3) {
+        & > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: image;
+            & > div {
+                width: 80%;
+                max-width: 500px;
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

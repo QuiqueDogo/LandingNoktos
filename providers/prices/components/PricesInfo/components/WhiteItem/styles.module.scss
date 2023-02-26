@@ -1,0 +1,141 @@
+@import "/styles/variables.scss";
+
+.WhiteItem {
+  width: 350px;
+  padding: 24px;
+  font-size: 16px;
+  border-radius: 25px;
+  background-color: #f9f9f9;
+  @include xl {
+    width: 300px;
+    font-size: 13px;
+  }
+  &__title {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    & > span:first-child {
+      color: #363853;
+      font-size: 1.7em;
+      font-weight: 600;
+    }
+    & > span:last-child {
+      margin-left: 10px;
+      color: $accent;
+      font-size: 1.7em;
+      font-weight: 600;
+    }
+  }
+  &__cost {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    & > div {
+      width: 85%;
+      padding: 8px 0;
+      border: 1px solid #ebf2fa;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & > label {
+        margin: 0;
+        color: #363853;
+        font-size: 1.8em;
+        font-weight: 600;
+        line-height: 32px;
+      }
+      & > span {
+        color: #ffa450;
+        font-size: 1.32em;
+        font-weight: 600;
+      }
+    }
+  }
+  &__labelText {
+    display: flex;
+    justify-content: center;
+    & > p {
+      max-width: 280px;
+      color: #848199;
+      font-size: 1.05em;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+  }
+  &__value {
+    margin: 1rem 0 1.3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > div {
+      width: 80%;
+      margin-bottom: 8px;
+      padding: 6px 24px;
+      background-color: rgba(196, 196, 196, 0.16);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > span {
+        color: #363853;
+        font-size: 1.8em;
+        font-weight: 600;
+      }
+    }
+    & > label {
+      color: #848199;
+      font-size: 1em;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > div {
+      max-width: 240px;
+    }
+  }
+  &__buyButton {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > label {
+      margin-top: 0.8rem;
+      font-size: 0.9em;
+      font-weight: 600;
+    }
+  }
+}
+
+.InfoItem {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  & > div:first-child {
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    background-color: rgba(0, 194, 255, 0.13);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & > div:last-child {
+    & > span:first-child {
+      color: #848199;
+      font-size: 1em;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    & > span:last-child {
+      margin-left: 6px;
+      color: #848199;
+      font-size: 1em;
+      letter-spacing: 1px;
+    }
+  }
+}

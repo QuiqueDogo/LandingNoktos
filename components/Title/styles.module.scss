@@ -1,0 +1,20 @@
+@import "/styles/variables.scss";
+
+.Title {
+  & > div {
+    display: flex;
+    align-items: center;
+    & > h1 {
+      margin: 0 0 0 16px;
+      color: #363853;
+      font-weight: 600;
+      font-size: 34px;
+      @include tablet {
+        font-size: 36px;
+      }
+      @include tablet {
+        font-size: 40px;
+      }
+    }
+  }
+}

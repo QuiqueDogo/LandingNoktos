@@ -1,0 +1,125 @@
+@import "../../../../../../../styles/variables.scss";
+
+.InvoiceDetail {
+    width: 65%;
+    min-height: 580px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &__item {
+        width: 90%;
+        padding: 32px 0;
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            & div:first-child {
+                display: flex;
+                align-items: center;
+                & > div {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 100%;
+                    background-color: $accent;
+                }
+                & > h4 {
+                    margin: 0 0 0 16px;
+                    color: #4e5d78;
+                    font-weight: 600;
+                }
+            }
+        }
+        & table {
+            width: 100%;
+            margin-top: 40px;
+            & td {
+                color: #4e5d78;
+                font-weight: 600;
+            }
+            & > tr:first-child {
+                & th {
+                    padding: 12px 0;
+                    font-size: 14px;
+                    color: #4e5d78;
+                    background-color: #fafbfc;
+                    letter-spacing: 1px;
+                }
+                & > th:first-child {
+                    padding-left: 16px;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+                & > th:last-child {
+                    padding-right: 16px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+        }
+        &__tableOne {
+            &__customize {
+                margin-top: 16px;
+                display: flex;
+                align-items: center;
+                & > div:first-child {
+                    width: 44px;
+                    & > img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                & > div:last-child {
+                    margin-left: 32px;
+                    display: flex;
+                    flex-direction: column;
+                    & > label {
+                        margin: 0;
+                        font-weight: 600;
+                        color: #4e5d78;
+                    }
+                    & > span:nth-child(2) {
+                        margin-bottom: 5px;
+                        color: #b0b7c3;
+                        font-size: 14.5px;
+                    }
+                    & > span:nth-child(3) {
+                        color: $accent;
+                        font-size: 14.5px;
+                    }
+                }
+            }
+        }
+        &__tableTwo {
+            &__customize {
+                margin-top: 16px;
+                display: flex;
+                & > div:first-child {
+                    & > img {
+                        width: 48px;
+                    }
+                }
+                & > div:last-child {
+                    margin-left: 32px;
+                    & > div {
+                        & > label {
+                            margin: 0 8px 0 0;
+                        }
+                        & > span {
+                            color: $accent;
+                        }
+                    }
+                    & > span {
+                        color: #b0b7c3;
+                        font-size: 14.5px;
+                    }
+                }
+            }
+        }
+        & > button:last-child {
+            position: absolute;
+            right: 32px;
+            bottom: 32px;
+        }
+    }
+}

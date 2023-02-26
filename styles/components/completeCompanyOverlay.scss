@@ -1,0 +1,64 @@
+.complete-company-overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 11; /* Specify a stack order in case you're using a different order for other elements */
+
+  &__main_container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: $white;
+    width: 50%;
+
+    @media (max-width: 1000px) {
+      width: 80%;
+    }
+  }
+
+  &__inner_container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__logo_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    & img {
+      width: 40%;
+    }
+  }
+
+  &__top_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & p{
+      margin-top: 15px;
+      font-size: 25px;
+      font-family: "Raleway Medium", serif;
+    }
+  }
+
+  &__close_container{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+}

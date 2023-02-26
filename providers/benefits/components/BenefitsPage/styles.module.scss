@@ -1,0 +1,36 @@
+@import "/styles/variables.scss";
+
+.BenefitsPage {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-family: "DM Sans Regular";
+    @include desktop {
+        font-size: 16px;
+    }
+    &__container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include desktop {
+            width: 100%;
+        }
+        & > h2 {
+            font-size: 2em;
+            font-weight: 600;
+            @include tablet {
+                font-size: 2.1em;
+            }
+        }
+        & > div {
+            max-width: 1200px;
+            @include desktop {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}

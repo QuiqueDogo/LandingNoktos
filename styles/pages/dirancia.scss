@@ -1,0 +1,136 @@
+main{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+    height: auto;
+    background-color: #fcfcfc;
+}
+.dirancia{
+    &_principal{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        background-color: $grayLight;
+        padding-top: 5%;
+        @media (max-width: 767px){
+            flex-direction: column;
+          }
+    }
+    &_texto{
+        font-size: 1rem;
+        font-family: "Raleway Regular";
+        @media (max-width: 420px){
+            font-size: .9rem;
+          }
+        &_color{
+            color: $accent;
+            @media (max-width: 420px){
+                font-size: .9rem;
+              }
+        }
+    }
+    &_foto{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    &_foto_compu{
+        max-width: 100%;
+        max-height: 100%;
+        @media (max-width: 767px){
+            max-width: 0%;
+        max-height: 0%;
+            }
+    }
+    &_header{
+        font-size: 2rem;
+        font-family: "Raleway ExtraBold";
+        text-transform: uppercase;
+        @media (max-width: 420px){
+        font-size: 1.5rem;
+        }
+    }
+    &_header_color{
+        font-size: 2rem;
+        font-family: "Raleway ExtraBold";
+        text-transform: uppercase;
+        color: $accent;
+    }
+    &_numeros{
+        width: 100%;
+        background-color: $accent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 3%;
+        @media (max-width: 420px){
+            flex-direction: column;
+            align-items: center;
+          }
+    }
+    &_num{
+        font-size: 4.5rem;
+        font-family: "Raleway Black", serif;
+        color: $white;
+        @media (max-width: 420px){
+            font-size: 2.5rem;
+          }
+    }
+    &_text{
+        font-size: 1.2rem;
+        font-family: "Raleway ExtraBold";
+        text-transform: uppercase;
+        @media (max-width: 420px){
+            font-size: 1rem;
+          }
+        &_color{
+            color: $accent;
+        }
+
+    }
+    &_txtcolumn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1rem;
+        font-family: "Raleway Regular";
+    }
+    &_s_color{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: $blueLight;
+        padding: 4%;
+        font-size: 1.6rem;
+        font-family: "Raleway Regular";
+    }
+    &_section-dos-texto{
+        padding: 5%;
+    }
+    &_boton{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    &_links_end{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    &_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        &_nombre{
+            justify-content: space-around;
+        }
+    }
+    &_link{
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-evenly;
+        // &_nombre{
+        //     justify-content: space-around;
+        // }
+    }
+}

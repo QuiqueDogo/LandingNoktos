@@ -1,0 +1,110 @@
+@import "/styles/variables.scss";
+.Prices {
+  margin: 5rem 0;
+  font-size: 14.5px;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  @include tablet {
+    font-size: 15px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
+  &__container {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    @media screen and (min-width: 1400px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__item {
+    width: 300px;
+    padding: 1.5em 1.5em 2em 1.5em;
+    border-radius: 16px;
+    position: relative;
+    @include smallPhone {
+      width: 200px;
+    }
+    @include tablet {
+      width: 330px;
+    }
+    @include desktop {
+      width: 360px;
+    }
+    & > h4 {
+      margin: 0 0 8px 4px;
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+    & > div:nth-child(2) {
+      display: inline-block;
+      border-radius: 10px;
+      & > span {
+        font-size: 1.81em;
+        font-weight: 600;
+      }
+    }
+    & .container_noktos {
+      margin: 10px 0 2px 4px;
+      display: flex;
+      align-items: center;
+      & > span {
+        font-size: 0.97em;
+      }
+      & > div {
+        margin-left: 16px;
+        width: 40px;
+        height: 30px;
+        background-color: #e8f9ff;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & > span {
+          color: $accent;
+          font-size: 0.94em;
+          font-weight: 600;
+        }
+      }
+    }
+    & .container_taxes {
+      margin-left: 4px;
+      display: flex;
+      align-items: center;
+      & > div {
+        width: 19px;
+        height: 19px;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      & > span {
+        margin-left: 8px;
+        font-size: 0.91em;
+      }
+    }
+    & > div:last-child {
+      width: 2.75em;
+      height: 2.75em;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      & > span {
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
+.plus_button{
+  background-color: #E8E8E8;
+  padding: 1px 8px;
+}

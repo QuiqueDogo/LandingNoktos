@@ -1,0 +1,142 @@
+.genv2{
+    &_backBlue{
+        background-color: $backgroundBlue;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between ;
+        align-items: center;
+        padding: 4%;
+        @media (max-width: 800px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          padding: 8% !important;
+        }
+    }
+
+    &_bB{
+      background-color: $backgroundBlue;
+    }
+    &_bG{
+      background-color: $backgroundGray;
+    }
+
+    &_backGray{
+        background-color: $backgroundGray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4%;
+        @media (max-width: 800px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          padding: 8%;
+        }
+    }
+    &__durante_viaje{
+      width: 50%;
+      height: 50%;
+    }
+    &__reverse{
+      background-color: $backgroundGray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4%;
+        
+        @media (max-width: 800px) {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-evenly;
+          padding: 8%;
+        }
+    }
+    &__reverseB{
+      background-color: $backgroundBlue;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4%;
+      @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        padding: 8%;
+      }
+    }
+
+    &_imgRes{
+        width: 80%;
+        height: 80%;
+    }
+
+    &_btnBlue {
+        width: auto;
+        background-color: $blue;
+        font-family: "Raleway Bold", serif;
+        padding: 10px 50px;
+        border-radius: 15px;
+        color: white;
+        margin-top: 20pt;
+        @media (max-width: 800px){
+          display: flex;
+          justify-content: center;
+        } 
+        &__btnOrange {
+          background-color: $botonOrange;
+        }
+        &__btnBlueDark {
+          background-color: #1F5B9E;
+        }
+        &:hover {
+          color: white;
+        }      
+      }
+      &_title {
+        font-size: 26.5pt;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 30pt;
+        text-align: justify;
+        color: $darkPrimary;
+        &_colorB {
+          color: $blue;
+        }
+        &_colorOtherBlue {
+          color: $colorBlueDark;
+        }
+        &_colorOrange {
+          color: $botonOrange;
+        }
+        
+      }
+      &_fend{
+          display: flex;
+          align-items: flex-end !important;
+          margin-top: 25%;
+          margin-left: -20%;
+          @media (max-width: 800px) {
+            margin: 0%;
+          }
+      }
+      &_lineSep {
+        width: 27.5%;
+        height: 25px;
+        margin-top: 4.5%;
+        background-color: $lines;
+        & right {
+          float: right;
+        }
+        @media (max-width: 800px) {
+          width: 100%;
+        }
+      }
+    &_column{
+        display: flex;
+        flex-direction: column;
+        max-width: 30%;
+    }
+}

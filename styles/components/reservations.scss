@@ -1,0 +1,71 @@
+.reservations-title {
+    color: $accent;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.statusContainer {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    width: 5rem;
+    position: relative;
+    & span {
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        left: -65px;
+        top: 0;
+    }
+    & p {
+        position: relative;
+        margin: 0;
+    }
+    & p::before {
+        position: absolute;
+        content: "";
+        left: -16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        border-radius: 20px;
+    }
+    &--confirmed {
+        & p::before {
+            background-color: $accept;
+        }
+    }
+    &--cancelled {
+        & p::before {
+            background-color: $error;
+        }
+    }
+    &--updated {
+        & p::before {
+            background-color: $gold;
+        }
+    }
+    &--costCenterId {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &--costCenterId p {
+        position: relative;
+        margin: 0 15px 0 0;
+    }
+}
+
+
+.rdt_TableCol_Sortable {
+    &:hover div, span {
+        color: white;
+    }
+}
+
+.rdt_TableRow{
+    border-bottom: none!important;
+}

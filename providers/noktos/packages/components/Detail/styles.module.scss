@@ -1,0 +1,164 @@
+@import "../../../../../styles/variables.scss";
+.Detail {
+  min-width: 400px;
+  padding: 12px 16px 24px 16px;
+  background-color: $accent;
+  border-radius: 15px;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  @include tablet {
+    min-width: 550px;
+  }
+
+  @include smallPhone {
+    min-width: 200px;
+  }
+  & > h3 {
+    margin: 16px 0 24px 16px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  & hr {
+    margin: 14px 0;
+  }
+  & > div:nth-child(2) {
+    padding: 36px 32px 24px 24px;
+    background-color: #fff;
+    border-radius: 15px;
+    & > div:first-child {
+      display: flex;
+      justify-content: space-between;
+      & > label {
+        color: rgba(0, 0, 0, 0.54);
+        font-weight: 600;
+      }
+      & > span {
+        font-weight: 600;
+        color: $accent;
+      }
+    }
+  }
+
+  &__taxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > div {
+      display: inline-flex;
+      align-items: center;
+      color: rgba(168, 168, 168, 0.79);
+      & > div {
+        width: 16px;
+        height: 16px;
+        border-radius: 5px;
+        border: 1px solid #c4c4c4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      & > span {
+        margin-left: 8px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+    & > span {
+      font-weight: 600;
+      color: #c4c4c4;
+    }
+  }
+
+  &__discount {
+    display: flex;
+    justify-content: space-between;
+    & > div {
+      display: flex;
+      align-items: center;
+      & > i {
+        font-size: 15px;
+        color: $accent;
+      }
+      & > label {
+        margin: 0 0 0 4px;
+        color: #000;
+        font-weight: 600;
+      }
+    }
+    & > span {
+      font-weight: 600;
+      color: $error;
+    }
+  }
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    & > div {
+      display: flex;
+      align-items: center;
+      & > i {
+        font-size: 15px;
+        color: $accent;
+      }
+      & > label {
+        margin: 0 0 0 4px;
+        color: #000;
+        font-weight: 600;
+      }
+    }
+    & > span {
+      font-weight: 600;
+      color: #000;
+    }
+  }
+}
+
+.price_cross{
+  text-decoration: line-through;
+  font-size: 14px;
+  text-align: right;
+  opacity: .6;
+}
+
+.promoInfo {
+  background-color: $accent;
+  padding: 10px;
+  border-radius: 5px;
+  column-gap: 0;
+  margin-top: 10px;
+
+  &__text_container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: white;
+    font-family: "Poppins Light", serif;
+    margin: 0;
+    & span {
+      font-family: "Poppins Bold", serif;
+      font-size: 15px;
+      margin-left: 3px;
+    }
+  }
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.text_selected_package{
+  font-family: "Poppins Regular", serif;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 500;
+}
+
+.subtotal_package_selected{
+  font-family: "DM Sans Medium", serif;
+  margin: 0;
+  color: $accent;
+}

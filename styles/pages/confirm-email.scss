@@ -1,0 +1,39 @@
+main{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+    height: auto;
+    background-color: #fcfcfc;
+}
+.confirm{
+    &__principal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__logo{
+        max-width: 120px;
+        max-height: 120px;
+        padding-bottom: 25px; 
+    }
+    &__imgs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        font-family: "Raleway Bold";
+        font-size: 50px;
+    }
+    &__text{
+        font-family: "Raleway Medium";
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    &__icon{
+        color: $accent;
+    }
+    &__boton{
+        padding: 20px;
+    }
+}

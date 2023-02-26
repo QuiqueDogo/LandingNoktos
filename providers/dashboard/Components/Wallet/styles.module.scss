@@ -1,0 +1,50 @@
+@import "/styles/variables.scss";
+
+.Wallet {
+  margin: 64px 0;
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 5px;
+    padding: 24px;
+    border-radius: 25px;
+    background-color: #fff;
+    @include desktop {
+      width: 30%;
+    }
+    & > h3 {
+      font-weight: 600;
+      font-size: 17.5px;
+      @include tablet {
+        font-size: 15px;
+      }
+      @include desktop {
+        font-size: 18px;
+      }
+    }
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & > div {
+        margin: 8px 0 16px 0;
+        color: $accent;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        & > span {
+          font-size: 42px;
+          margin-right: 8px;
+        }
+      }
+      & > button {
+        width: 80%;
+        @include tablet {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

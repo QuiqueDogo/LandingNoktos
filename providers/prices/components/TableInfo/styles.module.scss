@@ -1,0 +1,33 @@
+.TableInfo {
+    margin-bottom: 12rem;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-family: "DM Sans Medium";
+    &__container {
+        width: 90%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > div {
+            margin-bottom: 3rem;
+            width: 100%;
+            padding: 24px 20px 32px 20px;
+            background-color: #e8e8e8;
+            border-radius: 15px;
+        }
+    }
+}
+
+.InfoItem {
+    padding: 16px 0 6px 8px;
+    border-bottom: 1.5px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > span {
+        max-width: 180px;
+        font-size: 1em;
+    }
+}

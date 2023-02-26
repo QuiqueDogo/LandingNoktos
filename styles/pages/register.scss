@@ -1,0 +1,96 @@
+.register{
+  &__main_container{
+    background-color: $background;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+
+    @media(max-width: 640px) {
+      padding: 30px;
+    }
+  }
+
+  &__info_container{
+    margin-top: 50px;
+  }
+
+  &__contact_container{
+
+  }
+
+  &__label_form{
+    font-family: "Raleway Medium", serif;
+  }
+
+  &__modal_container{
+    padding: 50px 30px;
+  }
+
+  form &__form_input{
+    font-family: "Raleway Light", serif;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    &:focus{
+      box-shadow: 0 0 2px $accent;
+      border: 1px solid $accent;
+    }
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+  }
+
+  form &__form_textarea{
+    font-family: "Raleway Light", serif;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    resize: none;
+    &:focus{
+      box-shadow: 0 0 2px $accent;
+      border: 1px solid $accent;
+    }
+  }
+
+  &__form_container{
+    background-color: white;
+    padding: 80px 50px 80px 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.1);
+    @media(max-width: 640px) {
+      padding: 50px 20px 50px 20px;
+    }
+  }
+
+  &__form_button_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  &__title_section{
+    font-family: "Raleway Regular", serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+
+    @media(max-width: 640px) {
+      font-size: 30px;
+    }
+  }
+
+  &__main_form{
+    & input[type='text'],input[type='tel'], input[type='number'], input[type='email'], input[type='password']{
+      font-family: "Raleway Light", serif;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      &:focus{
+        box-shadow: 0 0 2px $accent;
+        border: 1px solid $accent;
+      }
+    }
+  }
+}
+

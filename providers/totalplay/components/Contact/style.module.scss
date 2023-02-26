@@ -1,0 +1,176 @@
+@import "/styles/variables.scss";
+
+.MainPage {
+    padding-top: 1rem;
+    font-size: 16px;
+    font-family: "DM Sans Regular";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include tablet {
+        font-size: 17px;
+    }
+    @include desktop {
+        font-size: 22px;
+    }
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        & > div:nth-child(1) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 85%;
+        } 
+        @include desktop {
+            text-align: left;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            column-gap: 64px;
+        }
+        &__info {
+            width: 400px;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            border: 1px solid #d4d4d4;
+            margin: 30px 0;
+            padding: 20px;
+            box-shadow: 0px 9px 12px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            & .content_contact{
+                padding: 20px 10px;
+                width: 100%;
+                height: fit-content;
+                margin: 30px 0;
+                display: flex;
+                // flex-direction: column;
+                justify-content: center;
+            }
+            & .content_contact_register{
+                padding: 10px 20px;
+                width: 100%;
+                height: 450px;
+                margin: 30px 0;
+                display: flex;
+                // flex-direction: column;
+                justify-content: center;
+                @include mobileOnly{
+                    height: fit-content;
+                }
+                & p{
+                    margin: 0;
+                }
+                & .two_img{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    & img{
+                        height: 50px;
+                    }
+                }
+            }
+            @include tabletOnly{
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: 90%;
+            }
+            @include mobileOnly{
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: 90%;
+                justify-content: center;
+            }
+            @include desktop {
+                width: 500px;
+                max-width: 700px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            & .content_img{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                // margin-right: 60px;
+                overflow: hidden;
+                width: 200px;
+                text-align: center;
+              
+            }
+            & .content_img img{
+                border-radius: 50%;
+                width: 170px;
+                height: 170px;
+                object-fit: cover;
+            }
+            & > div:nth-child(2) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                & > h2 {
+                    color: $accent;
+                    font-size: 1.8em;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                }
+                & > p {
+                    margin-bottom: 40px;
+                    font-size: 1em;
+                    font-weight: 600;
+                }
+            }
+            & > p:last-child {
+                width: 90%;
+                color: #777e90;
+                font-size: 1.1em;
+                text-align: justify;
+                line-height: 30px;
+                @include desktop {
+                    width: 100%;
+                    font-size: 1em;
+                }
+            }
+        }
+        &__image {
+            width: 100%;
+          
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            @include desktop {
+                width: 100%;
+            }
+            &__box {
+                max-width: 1200px;
+                width: 100%;
+                // max-width: 460px;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                
+                @include desktop {
+                    width: 85%;
+                    margin: 0 auto;
+                }
+                & > img {
+                    height: 38px;
+                    margin: 10px 20px;
+                }
+            }
+        }
+    }
+}

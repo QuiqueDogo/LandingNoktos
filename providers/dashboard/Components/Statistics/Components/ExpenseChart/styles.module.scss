@@ -1,0 +1,84 @@
+@import "../../../../../../styles/variables.scss";
+.ExpenseChart {
+    height: 100%;
+    padding: 56px 32px 8px 32px;
+    border-radius: 30px;
+    border: 2px solid rgba(196, 196, 196, 0.38);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 9px 12px 1px rgba(0, 0, 0, 0.1);
+    &__info {
+        &__graph {
+            display: flex;
+            align-items: flex-end;
+            & div {
+                margin: 0 3px;
+                width: 35px;
+                height: 35px;
+                border-radius: 8px;
+            }
+            & > div:nth-child(1) {
+                height: 40px;
+                background-color: #cdf4ff;
+            }
+            & > div:nth-child(2) {
+                height: 55px;
+                background-color: #cdf4ff;
+            }
+            & > div:nth-child(3) {
+                height: 100px;
+                background-color: #a0d7e7;
+            }
+            & > div:nth-child(4) {
+                height: 200px;
+                background-color: #00c2ff;
+            }
+            & > div:nth-child(5) {
+                height: 135px;
+                background-color: #cfc8ff;
+            }
+            & > div:nth-child(6) {
+                height: 170px;
+                background-color: #cfc8ff;
+            }
+            & > div:nth-child(7) {
+                height: 110px;
+                background-color: #a0d7e7;
+            }
+        }
+        & > div:last-child {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & > h4 {
+                font-weight: 600;
+            }
+            & > span {
+                color: #808191;
+            }
+        }
+    }
+    &__showMore {
+        margin: 32px;
+        & > button {
+            width: 200px;
+            padding: 16px 0;
+            background-color: #1e2739;
+            border: none;
+            border-radius: 22px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            & > span {
+                margin-left: 8px;
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+    }
+}

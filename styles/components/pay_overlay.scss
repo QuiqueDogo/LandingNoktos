@@ -1,0 +1,63 @@
+.payoverlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 11; /* Specify a stack order in case you're using a different order for other elements */
+
+  @media (max-width: 800px) {
+    overflow: scroll;
+  }
+
+  &__main_container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: $white;
+    width: 60%;
+
+
+    @media (max-width: 1000px) {
+      top: 50%;
+      width: 90%;
+
+    }
+  }
+
+  &__left_container{
+    background-color: $accent;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  &__rigth_container{
+    padding: 20px 20px 20px 0;
+  }
+
+  &__title{
+    text-align: left;
+    font-family: "Raleway Bold", serif;
+    font-size: 30px;
+  }
+
+  &__subtitle{
+    text-align: left;
+    font-family: "Raleway Regular", serif;
+    font-size: 18px;
+  }
+
+  &__text{
+    text-align: left;
+    font-family: "Raleway Regular", serif;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+}

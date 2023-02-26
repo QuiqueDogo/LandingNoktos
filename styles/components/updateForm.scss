@@ -1,0 +1,69 @@
+.updateForm {
+    & form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    & h4 {
+        text-align: center;
+        font-weight: 600;
+        opacity: 0.8;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        & button {
+            width: 10rem;
+        }
+        & button:last-child {
+            background: transparent!important;
+            color: $accent;
+            border: 2px solid $accent!important;
+        }
+    }
+
+    &__costCenters {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        & div {
+            display: flex;
+            flex-wrap: wrap;
+            & label {
+                margin-top: 10px;
+                margin-right: 17px;
+                font-size: 12px;
+            }
+        }
+        &__title {
+            @include inputLabel;
+            margin: 0;
+        }
+    }
+    &__companies {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        & div {
+            display: flex;
+            flex-wrap: wrap;
+            & label {
+                margin-top: 10px;
+                margin-right: 17px;
+                font-size: 12px;
+            }
+        }
+        & p {
+            margin: 0 auto 0 0!important;
+            padding: 0;
+            @include inputLabel;
+            opacity: 1;
+            border: none;
+        }
+    }
+}

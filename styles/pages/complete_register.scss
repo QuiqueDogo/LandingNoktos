@@ -1,0 +1,60 @@
+.completeregister {
+  min-height: 600px;
+
+  &__main_container {
+    min-height: 900px;
+    background-color: $background;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+
+    @media(max-width: 640px) {
+      padding: 30px;
+    }
+  }
+
+  &__container_step{
+    background-color: white;
+    padding: 60px 50px 60px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+
+    &_title{
+      font-family: "Raleway Medium", serif;
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__buttons_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+  }
+
+  &__button_next{
+    background-color: $accent !important;
+    transition: all 0.3s ease !important;
+    border: 0 !important;
+    border-radius: 30px !important;
+    padding: 10px 20px !important;
+
+    &:hover{
+      background-color: $darkAccent !important;
+    }
+  }
+
+  &__button_return{
+    border: solid 1px $error !important;
+    transition: all 0.3s ease !important;
+    color: $errorAccent !important;
+    border-radius: 30px !important;
+    padding: 10px 20px !important;
+
+    &:hover{
+      color: white !important;
+      background-color: $errorAccent !important;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.responsiveNavigation {
+  width: 100%;
+  height: 100vh;
+  background: $accent;
+  z-index: 10000 !important;
+  visibility: hidden;
+  display: none;
+  padding: 2rem;
+  position: fixed;
+  transition: all 0.3s ease;
+  display: none;
+  & button {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    right: 1rem;
+    &:focus {
+      outline: none;
+    }
+    i {
+      color: white;
+      font-size: 2rem;
+    }
+  }
+  &--active {
+    @media only screen and (max-width: 764px) {
+      transform: translateX(0) !important;
+      display: block;
+    }
+  }
+  &--unactive {
+    @media only screen and (max-width: 764px) {
+      transform: translateX(-100%);
+    }
+  }
+
+  @media only screen and (max-width: 764px) {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+  }
+
+  &__auth {
+    width: 100%;
+    height: 10rem;
+    & ul {
+      @include responsiveMenuList;
+      height: 13rem;
+      & li a {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: white;
+      }
+    }
+  }
+  &__authLink {
+    border: 2px solid white;
+    padding: 5px 20px;
+    &--full {
+      background: white;
+      color: $accent !important;
+      font-weight: 600;
+    }
+  }
+  &__links {
+    width: 100%;
+    height: 17rem;
+    background: $accent;
+    margin-top: 5rem;
+    & ul {
+      @include responsiveMenuList;
+      list-style: none;
+      & li a {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: $darkPrimary;
+      }
+    }
+  }
+
+  #basic-nav-dropdown{
+      padding: 0% !important;
+  }
+
+  &__contact {
+    width: 100%;
+    height: 10%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & p {
+      color: white;
+      margin: 0;
+      font-size: 0.8em;
+    }
+  }
+}

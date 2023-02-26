@@ -1,0 +1,19 @@
+@import "../../../../../../../styles/variables.scss";
+.PayButton {
+    margin-top: 56px;
+    & > div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & > label {
+            font-size: 14.5px;
+            font-weight: 600;
+            font-style: italic;
+        }
+    }
+}
+
+.noteInvoice{
+    font-family: "DM Sans Regular", serif;
+    font-size: 14px;
+}

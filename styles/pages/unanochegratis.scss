@@ -1,0 +1,156 @@
+.una-noche-gratis{
+    &__main_container{
+        padding: 50px 0;
+    }
+
+    &__container_logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+        & img{
+            width: 200px;
+        }
+    }
+
+    &__container_title{
+        margin: 50px 0;
+        & h1{
+            font-family: "Raleway Bold", serif;
+            color: $primary;
+            text-align: center;
+            font-size: 40px;
+            & span{
+                color: $accent;
+            }
+        }
+    }
+
+
+    &__container_benefits{
+        display: flex;
+        flex-direction: column;
+        & p{
+            margin-bottom: 0;
+        }
+    }
+
+    &__section_benefits{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__section_benefits_title{
+        font-family: "Raleway Bold", serif;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__benefits{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__benefits_number{
+        background-color: $accent;
+        color: $white;
+        padding: 5px 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+    }
+
+    &__benefits_text{
+        font-size: 18px;
+        font-family: "Raleway Regular", serif;
+        & span{
+            font-family: "Raleway SemiBold", serif;
+        }
+    }
+
+    &__section_form{
+        margin-top: 50px;
+    }
+
+    &__container_form_title{
+        color: $accent;
+        font-family: "Raleway SemiBold", serif;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        & h2{
+            margin-bottom: 0;
+        }
+    }
+
+    &__container_form_subtitle{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__container_row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+
+        @media (max-width: 800px){
+            flex-direction: column;
+        }
+    }
+
+    &__container_column_form{
+        width: 50%;
+
+
+        @media (max-width: 800px){
+            width: 100%;
+        }
+    }
+
+    &__container_column_video{
+        width: 50%;
+        margin-left: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & figure{
+            width: 100%;
+            & video{
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 800px){
+            width: 100%;
+        }
+    }
+
+    &__container_form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        & form{
+            width: 60%;
+
+            @media (max-width: 800px){
+                width: 80%;
+            }
+        }
+    }
+}

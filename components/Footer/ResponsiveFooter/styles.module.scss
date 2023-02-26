@@ -1,0 +1,68 @@
+@import "../../../styles/variables.scss";
+
+.ResponsiveFooter {
+    font-size: 16px;
+    @include mobileOnly {
+        font-size: 13px;
+    }
+    & > div:first-child {
+        padding: 32px;
+        background-color: #19212c;
+        & > div:first-child {
+            & > a {
+                & > img {
+                    width: 150px;
+                }
+            }
+            display: flex;
+            justify-content: space-between;
+            & > div:last-child {
+                width: 240px;
+                color: $accent;
+                font-size: 1em;
+                & > div:first-child {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                & > hr {
+                    margin: 8px 0;
+                    background-color: #fff;
+                }
+            }
+        }
+        & > div:last-child {
+            padding: 42px 0 0 16px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1em;
+            & ul {
+                padding: 0;
+                & > b {
+                    color: $accent;
+                }
+                & > div {
+                    margin-top: 16px;
+                    & > li {
+                        margin-bottom: 4px;
+                        list-style: none;
+                        & > a {
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__copy {
+        width: 100%;
+        padding: 16px 0;
+        font-size: 0.875em;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $accent;
+    }
+}

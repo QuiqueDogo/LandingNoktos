@@ -1,0 +1,91 @@
+.movementMenu{
+    width: 100%;
+    min-height: 10rem;
+    height: auto;
+    margin-top: 1rem;
+    &__tabs {
+        width: 100%;
+        height: 3rem;
+        & ul {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+        }
+    }
+    &__menuItem {
+        background: $white;
+        width: auto;
+        height: 100%;
+        @include flexCenter;
+        padding: 0 1rem;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        & a {
+            color: $accent;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &--active {
+            background: $accent;
+            & a {
+                color: $white;
+            }
+        }
+    }
+    &__currentTab {
+        width: 100%;
+        height: 5rem;
+        background: $accent;
+        @include flexCenter;
+        & h4 {
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+    &__table {
+        height: auto;
+        width: 100%;
+        .rdt_TableHeader {
+            display: none;
+        }
+    }
+
+    & .invisibleContainer {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.inner-table {
+    border-collapse: collapse;
+    width: 100%;
+
+    & td, th {
+        padding: 8px;
+    }
+
+    & td {
+        font-family: 'Raleway Regular', sans-serif;
+        font-size: 12px;
+    }
+
+    & tr:nth-child(even){background-color: #f2f2f2;}
+
+    & tr:hover {background-color: #ddd;}
+
+    & th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: $darkAccent;
+        color: white;
+        text-align: center;
+        font-family: 'Raleway Medium', sans-serif;
+        font-size: 14px;
+    }
+}

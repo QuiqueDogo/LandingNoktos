@@ -1,0 +1,10 @@
+.edit-company{
+    &__main_container{
+        background-color: $white;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+        border-radius: 15px;
+        min-height: 500px;
+        padding: 10px 20px;
+        margin: 50px 0;
+    }
+}

@@ -1,0 +1,119 @@
+main {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  background-color: $background;
+}
+.product {
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    @media (max-width: 420px){
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__title {
+    font-family: "Raleway Bold";
+    font-size: 40px;
+    color: $accent;
+    @media (max-width: 420px){
+      font-size: 30px;
+    }
+    &_dark {
+      color: $darkPrimary;
+    }
+  }
+  &__subtitle {
+    font-family: "Raleway Bold";
+    font-size: 16px;
+    &_dark {
+      color: $darkPrimary;
+    }
+    &_blue {
+      color: $accent;
+    }
+  }
+  &__container_light {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $blueLight;
+    padding-top: 5%;
+    @media (max-width: 420px){
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 5%;
+    }
+  }
+  &__container_img_reserva{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  &__text {
+    font-family: "Raleway SemiBold";
+    font-size: 14px;
+    text-align: justify;
+    &_white {
+      color: $white;
+    }
+  }
+  &__btn {
+    padding-top: 10px;
+    @media (max-width: 420px){
+     padding-bottom: 5%; 
+    }
+  }
+  &__container_gestiona {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $accent;
+    padding: 5%;
+  }
+  &__container_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    @media (max-width: 420px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+  }
+  &__card {
+    width: 450px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 5px #e2e1e1;
+    padding: 2%;
+    text-align: center;
+    @media (max-width: 420px){
+      width: 300px;
+     }
+  }
+  &__icono {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  &__icon {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,8 @@
+.Dashboard {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    &__container {
+        width: 90%;
+    }
+}

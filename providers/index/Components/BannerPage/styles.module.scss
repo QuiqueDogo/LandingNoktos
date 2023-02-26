@@ -1,0 +1,65 @@
+@import "/styles/variables.scss";
+
+.BannerPage {
+    margin-top: 9rem;
+    position: relative;
+    font-size: 16px;
+    font-family: "DM Sans Regular";
+    @include tablet {
+        font-size: 18px;
+    }
+    @include desktop {
+        font-size: 20px;
+    }
+    &__banner {
+        width: 100%;
+        height: 260px;
+        & > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__info {
+        position: absolute;
+        top: 12%;
+        left: 20%;
+        @include tablet {
+            top: 25%;
+            left: 10%;
+        }
+        @include desktop {
+            top: 22%;
+        }
+        & > p {
+            max-width: 300px;
+            color: #fff;
+            font-size: 1.4em;
+            font-weight: 600;
+            text-align: center;
+            @include tablet {
+                text-align: left;
+            }
+            @include desktop {
+                max-width: 350px;
+            }
+        }
+    }
+    &__button {
+        position: absolute;
+        top: 50%;
+        left: 32%;
+        visibility: hidden;
+        @include tablet {
+            top: 30%;
+            left: 60%;
+        }
+        @include desktop {
+            left: 75%;
+        }
+        & > button {
+            font-size: 1em;
+            @include tablet {
+            }
+        }
+    }
+}

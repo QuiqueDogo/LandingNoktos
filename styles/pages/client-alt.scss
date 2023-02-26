@@ -1,0 +1,276 @@
+.client-alt {
+  // Primera sección
+  &__first {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: $blueLight;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    max-width: 100%;
+    @media (max-width: 420px){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+  }
+  &__text_first {
+    font-family: "Raleway Bold", sans-serif;
+    color: $textGray;
+    font-size: 35px;
+    @media (max-width: 420px){
+      font-size: 25px;
+    }
+  }
+  &__btn_first {
+    background-color: $accent;
+    border: #13268a;
+    font-family: "Raleway Bold", serif;
+    padding: 10px 50px;
+    border-radius: 15px;
+    color: white;
+
+    &:link{
+      text-decoration: none;
+    }
+    &:hover{
+      color: white;
+    }
+  }
+  &__img_first {
+    width: 400px;
+    height: 100%;
+    @media (max-width: 420px){
+      width: 90%;
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  //   Segunda sección
+  &__second {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    max-width: 100%;
+    @media (max-width: 420px){
+      flex-direction: column;
+    }
+  }
+  &__separacion {
+    width: 29%;
+    height: 25px;
+    background-color: $darkPrimary;
+  }
+  &__separacion2 {
+    width: 30%;
+    height: 25px;
+    background-color: $darkPrimary;
+    float: right;
+  }
+  &__txt_sep {
+    text-align: center;
+    width: 40%;
+  }
+  &__txt_sep {
+    font-size: 23px;
+    font-family: "Raleway Bold";
+    color: $darkPrimary;
+  }
+  &__txt_sep2 {
+    font-size: 20px;
+    font-family: "Raleway Medium";
+    color: $accent;
+    font-weight: bold;
+  }
+  &__texto_second_one {
+    font-family: "Raleway Bold";
+    font-size: 38px;
+    color: $darkPrimary;
+    @media (max-width: 420px){
+      font-size: 25px;
+    }
+  }
+  &__texto_second_two {
+    font-family: "Raleway Regular";
+    font-size: 16px;
+    color: $darkPrimary;
+  }
+  //   Tercerca sección
+  &__clientes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $grayLight;
+    padding-left: 5%;
+    padding-right: 0%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    @media (max-width: 420px){
+      flex-direction: column;     
+      margin-bottom: 10px;
+    }
+  }
+  &__clientes_column {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    @media (max-width: 420px){
+      justify-content: center;
+      width: 100%;
+      padding:10%;
+    }
+  }
+  &__texto_column {
+    font-family: "Raleway Bold";
+    font-size: 16px;
+    color: $darkPrimary;
+    padding-top: 20px;
+  }
+  &__texto_c {
+    font-family: "Raleway Regular";
+    font-size: 14px;
+    color: $darkPrimary;
+  }
+  &__row_links{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+  }
+  // Cuarta sección
+  &__unetelogos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: $darkPrimary;
+    font-family: "Raleway Bold";
+    font-size: 30px;
+    @media (max-width: 420px){
+      font-size: 25px;
+    }
+  }
+  &__imgLogos{
+    width: 50%;
+    height: 50%;
+    margin-left: 28%;
+    margin-bottom: 50px;
+    @media (max-width: 420px){
+      width: 100%;
+      height: 100%;
+      margin-left: 5px;  
+    }
+   }
+  // Quinta seccion
+  &__buenNegocioBack{
+      background-color: $darkPrimary;
+      width: 100%;
+      padding: 10px;
+      
+  }
+  &__buenNegocio{
+    color: $white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Roboto Bold";
+    font-size: 50px;
+    @media (max-width: 420px){
+      font-size: 25px;    
+    }
+    
+  }
+  &__botones_final{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    @media (max-width: 420px){
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      line-height: 50px;
+      margin-top: 25px;
+    }
+  }
+  &__btn_precios{
+    background-color: $accent;
+    border: $accent;
+    font-family: "Raleway Bold", serif;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none !important;
+    &:hover{
+      color: $white;
+    }
+    @media (max-width: 420px){
+      padding: 8px 30px;
+      font-size: 15px;
+    }
+  }
+  &__btn_llamanos{
+    background-color: $darkPrimary;
+    border: 1px solid $darkPrimary;
+    font-family: "Raleway Bold", serif;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    color: $white;
+    text-decoration: none !important;
+    &:hover{
+      color: $white;
+    }
+    @media (max-width: 420px){
+      padding: 8px 20px;
+      font-size: 15px;
+    }
+  }
+  &__numero{
+    color: $darkPrimary;
+    font-family: "Roboto Bold";
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+    @media (max-width: 420px){
+      font-size: 16px;    
+    }
+  }
+  &__btn_link{
+    background-color: $accent;
+    border: #13268a;
+    font-family: "Raleway Bold", serif;
+    padding: 8px 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    max-width: 50%;
+    &:link{
+      text-decoration: none;
+    }
+    &:hover{
+      color: white;
+    }
+  }
+
+  &__img-circulo{
+    width: 80%;
+    height: 80%;
+    @media (max-width: 420px){
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

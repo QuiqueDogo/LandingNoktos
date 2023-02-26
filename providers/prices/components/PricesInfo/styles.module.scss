@@ -1,0 +1,19 @@
+@import "/styles/variables.scss";
+
+.PricesInfo {
+  margin: 4rem 0 9rem 0;
+  display: flex;
+  justify-content: center;
+  &__container {
+    width: 98%;
+    @include tablet {
+      width: 75%;
+    }
+    @include desktop {
+      width: 98%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../../../../../../../../styles/variables.scss";
+.CardSelected {
+    margin-top: 20px;
+    padding: 16px 32px 16px 0;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > div:first-child {
+        & > img {
+            width: 32px;
+        }
+        & > span {
+            margin-left: 12px;
+            color: rgba(0, 0, 0, 0.54);
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+    & div:last-child {
+        cursor: pointer;
+        & > span {
+            color: $accent;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+}

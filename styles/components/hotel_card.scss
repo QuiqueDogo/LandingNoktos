@@ -1,0 +1,83 @@
+.hotelcard{
+  &__container{
+    border-radius: 30px;
+    background-color: $white;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    width: 25%;
+    height: 450px;
+  }
+
+  &__hotel_name{
+    color: $accent;
+    font-family: "Raleway Bold", serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: end;
+  }
+
+  &__container_image{
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__container_description{
+    background-color: $white;
+    border-radius: 30px;
+    padding: 20px 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 200px;
+  }
+
+  &__hotel_price_container{
+    width: 100%;
+  }
+
+  &__button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__button_select_membership{
+    background-color: $accent;
+    border: $accent;
+    font-family: "Raleway Regular", serif;
+    padding: 5px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 17px $accentOpacity;
+    font-size: 14px;
+    &:hover{
+      background-color: $darkAccent;
+      border: $darkAccent;
+    }
+  }
+}
+
+.homeHotelCard{
+  &__container{
+    border-radius: 30px;
+    background-color: $white;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    height: 450px;
+    width: 300px;
+    margin: 30px 30px;
+
+    @media (max-width: 500px){
+      width: 300px;
+      margin: 30px 15px;
+    }
+  }
+
+  &__description{
+    font-family: "Raleway Regular", serif;
+    font-size: 13px;
+  }
+}

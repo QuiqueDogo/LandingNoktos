@@ -1,0 +1,258 @@
+.index {
+  &__back-blue {
+    background-color: $backgroundBlue;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8% !important;
+    }
+  }
+  &__title {
+    font-size: 26.5pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-display: swap;
+    line-height: 30pt;
+    color: $darkPrimary;
+    &_colorB {
+      color: $blue;
+    }
+    &_colorOtherBlue {
+      color: $colorBlueDark;
+    }
+    &_colorOrange {
+      color: $botonOrange;
+    }
+    
+  }
+  &__subtitle {
+    font-size: 19pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-display: swap;
+    margin-top: 20pt;
+    color: $darkPrimary;
+    @media (max-width: 800px){
+    font-size: 21pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-display: swap;
+    line-height: 30pt;
+    color: $darkPrimary;
+    } 
+    &_colorB {
+      color: $blue;
+    }
+  }
+  &__text {
+    margin-top: 26.5pt;
+    font-size: 16.5pt;
+    line-height: 16.8pt;
+    text-align: justify;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-display: swap;
+    
+    &_colorB {
+      color: $blue;
+    }
+    &_colorOrange {
+      color: $botonOrange;
+    }
+    @media (max-width: 800px){
+      display:inline-block;
+    } 
+  }
+  &__texto {
+    margin-top: 26.5pt;
+    font-size: 16.5pt;
+    line-height: 16.8pt;
+    text-align: justify;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-display: swap;
+    &_colorB {
+      color: $blue;
+    }
+    &_colorOrange {
+      color: $botonOrange;
+    }
+    @media (max-width: 800px){
+      margin: 8% !important;
+    } 
+  }
+  &__btnBlue {
+    background-color: $blue;
+    font-family: "Raleway Bold", Arial, Helvetica, sans-serif;
+    font-display: swap;
+    padding: 10px 50px;
+    border-radius: 15px;
+    color: white;
+    margin-top: 20pt;
+    @media (max-width: 800px){
+      display: flex;
+      justify-content: center;
+    } 
+    &__btnOrange {
+      background-color: $botonOrange;
+    }
+    &__btnBlueDark {
+      background-color: #1F5B9E;
+    }
+    &:hover {
+      color: white;
+    }   
+  }
+  &__btnOrange {
+    background-color: $botonOrange;
+    font-family: "Raleway Bold", Arial, serif;
+    font-display: swap;
+    padding: 10px 50px;
+    border-radius: 15px;
+    color: white;
+    margin-top: 20pt;
+    
+    &:hover {
+      color: white;
+    }
+    @media (max-width: 800px){
+      display: flex;
+      justify-content: center;
+    } 
+  }
+  &__back-gray {
+    background-color: $backgroundGray;
+    @media (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 8% !important;
+    }
+  }
+  &__lineSep {
+    width: 29%;
+    height: 25px;
+    margin-top: 4.5%;
+    background-color: $lines;
+    & right {
+      float: right;
+    }
+    @media (max-width: 1340px) {
+      width: 100%;
+    }
+  }
+  &__cuadro{
+    width: 35%;
+    @media (max-width: 1340px) {
+      width: 100%;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    @media (max-width: 800px) {
+     margin-top: 30px;
+     width: 70%;
+     height: 70%;
+    }
+  }
+  &__carrusel{
+    width: 80%;
+  }
+  &__logosC{
+    width: 80%;
+    height: 80%;
+  }
+  &__center{
+    @media (max-width: 800px) {
+      text-align: center !important;
+     }
+  }
+  &__card_blue {
+    background-color: #1eb8d2;
+  }
+  &__card_blueMedium {
+    background-color: #1f5b9e;
+  }
+  &__card_blueDark {
+    background-color: #03374f;
+  }
+  &__circulosNum {
+    background-color: #f9c953;
+    color: white;
+    border-radius: 999px;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    font-size: 45px;
+    font-family: "Roboto Bold, Arial, Helvetica, sans-serif";
+    font-display: swap;
+  }
+
+  &_borde {
+    width: 50%;
+    border-bottom: 5px solid $botonOrange;
+  }
+  &__responsive{
+    @media (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;      
+    }
+  }
+  &__responsive_card{
+    @media (max-width: 800px) {
+      margin-bottom: 3%;     
+    }
+  }
+  &__reverse{
+    @media (max-width: 800px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  &__video {
+    border: 2px solid white;
+    padding: 0px;
+    @media (max-width: 800px) {
+      margin-top: 10%;
+    }
+  }
+  &__links{
+    height: 125px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 800px) {
+      height: auto;
+      margin-bottom: 3%;
+    }
+  }
+  &__linksM{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 800px) {
+      height: auto;
+      margin-bottom: 3%;
+    }
+  }
+  &__linkF{
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 800px) {
+      height: auto;
+      margin-bottom: 3%;
+    }
+  }
+}

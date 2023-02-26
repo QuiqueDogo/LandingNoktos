@@ -1,0 +1,28 @@
+@import "/styles/variables.scss";
+
+@mixin circle {
+    margin: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 1px solid $accent;
+}
+
+.Stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    right: -50px;
+    & > div:first-child {
+        @include circle;
+    }
+    & > div:nth-child(2) {
+        width: 64px;
+        border-bottom: 1px dashed $accent;
+    }
+    & > div:last-child {
+        @include circle;
+    }
+}
