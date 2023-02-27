@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport Content from \"providers/prices/\";\n\nconst Prices = () => /*#__PURE__*/_jsx(Content, {});\n\nexport default Prices;","map":null,"metadata":{},"sourceType":"module"}

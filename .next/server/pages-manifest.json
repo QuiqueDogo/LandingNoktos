@@ -1,0 +1,18 @@
+{
+  "/_app": "pages/_app.js",
+  "/beneficios": "pages/beneficios.html",
+  "/como-funciona": "pages/como-funciona.html",
+  "/home/politics": "pages/home/politics.html",
+  "/home/prices": "pages/home/prices.html",
+  "/home/privacity": "pages/home/privacity.html",
+  "/home/questions": "pages/home/questions.html",
+  "/": "pages/index.html",
+  "/precios": "pages/precios.html",
+  "/registro-gbta": "pages/registro-gbta.html",
+  "/totalplay": "pages/totalplay.html",
+  "/unanochegratis": "pages/unanochegratis.html",
+  "/unete-a-noktos": "pages/unete-a-noktos.html",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}

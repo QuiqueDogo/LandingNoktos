@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var formatMoney = function formatMoney(total) {\n  return new Intl.NumberFormat(\"en-US\", {\n    style: \"currency\",\n    currency: \"USD\"\n  }).format(parseFloat(total));\n};","map":null,"metadata":{},"sourceType":"module"}

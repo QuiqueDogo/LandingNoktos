@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport Content from \"../providers/benefits/index\";\n\nconst Benefits = () => /*#__PURE__*/_jsx(Content, {});\n\nexport default Benefits;","map":null,"metadata":{},"sourceType":"module"}
